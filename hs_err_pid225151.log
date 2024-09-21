@@ -1,0 +1,1524 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000072973daa7a70, pid=225151, tid=0x0000729723fff640
+#
+# JRE version: OpenJDK Runtime Environment (Zulu 8.72.0.17-CA-linux64) (8.0_382-b05) (build 1.8.0_382-b05)
+# Java VM: OpenJDK 64-Bit Server VM (25.382-b05 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [_orekit.cpython-310-x86_64-linux-gnu.so+0x10a7a70]  JCCEnv::callObjectMethod(_jobject*, _jmethodID*, ...) const+0xb0
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://www.azul.com/support/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x0000607aae489e60, RCX=0x0000729723ffba90, RDX=0x0000607aafb75c48
+RSP=0x0000729723ffba90, RBP=0x0000607ab01c7d00, RSI=0x0000607ab2b04668, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000607ab2cb2de0, R10=0x0000000000000000, R11=0x0000607aae489e60
+R12=0x0000607ab2b04668, R13=0x0000607aafb75c48, R14=0x0000000000000000, R15=0x000072978411c930
+RIP=0x000072973daa7a70, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x0000729723ffba90)
+0x0000729723ffba90:   0000003000000018 0000729723ffbb80
+0x0000729723ffbaa0:   0000729723ffbab0 8987792fa6be0000
+0x0000729723ffbab0:   0000607aae49a280 0000607aae378938
+0x0000729723ffbac0:   0000000000000000 0000607aae2946e0
+0x0000729723ffbad0:   0000729728aaa0d0 0000607ab2cb2de0
+0x0000729723ffbae0:   00007297a83096c0 0000729723142d90
+0x0000729723ffbaf0:   000072973b608e08 00007297a62e8730
+0x0000729723ffbb00:   0000003000000010 0000729723ffbc10
+0x0000729723ffbb10:   0000729723ffbb20 8987792fa6be0000
+0x0000729723ffbb20:   0000729723142b50 0000729723ffbbf0
+0x0000729723ffbb30:   000072973ef71a36 0000607aae2304d4
+0x0000729723ffbb40:   0000000000000083 8987792fa6be0000
+0x0000729723ffbb50:   0000607ab2c62c68 00007297402946c0
+0x0000729723ffbb60:   0000607ab01c7d00 0000607ab2cb2de0
+0x0000729723ffbb70:   0000607aae489e60 000072973daaaca9
+0x0000729723ffbb80:   0000607aae489e60 0000607aae26f863
+0x0000729723ffbb90:   0000607aae48cdc0 8987792fa6be0000
+0x0000729723ffbba0:   0000729723fff640 0000607aae491e60
+0x0000729723ffbbb0:   0000607ab2cb2de0 00007297402946c0
+0x0000729723ffbbc0:   0000729728a98b38 8987792fa6be0000
+0x0000729723ffbbd0:   0000729728a98b48 0000729728ac4160
+0x0000729723ffbbe0:   0000000000000001 0000607ab2cb2de0
+0x0000729723ffbbf0:   0000607aae489e60 0000000000000000
+0x0000729723ffbc00:   0000000000000000 0000607aae2488a9
+0x0000729723ffbc10:   0000607ab2cb2de0 0000607aae24fa93
+0x0000729723ffbc20:   0000000000000000 0000729728a98b30
+0x0000729723ffbc30:   0000729728a989a0 0000607ab2cb2de0
+0x0000729723ffbc40:   0000729740961326 00007297409612e0
+0x0000729723ffbc50:   0000729728a98b40 0000607aae2442ca
+0x0000729723ffbc60:   0000729728a98b00 0000607aaf05e1f4
+0x0000729723ffbc70:   0000729740988190 000072974095e500
+0x0000729723ffbc80:   000072974095e4a0 0000000000000000 
+
+Instructions: (pc=0x000072973daa7a70)
+0x000072973daa7a50:   a4 3f da 01 c7 44 24 04 30 00 00 00 8b 38 ff 15
+0x000072973daa7a60:   6c 53 d6 01 4c 89 e6 48 89 e1 4c 89 ea 48 89 c7
+0x000072973daa7a70:   48 8b 00 ff 90 18 01 00 00 48 89 ef 49 89 c4 ff
+0x000072973daa7a80:   15 a3 cc d9 01 48 8b 44 24 18 64 48 33 04 25 28 
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x0000607aae489e60: PyUnicode_Type+0 in /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python at 0x0000607aae10b000
+RCX=0x0000729723ffba90 is an unknown value
+RDX=0x0000607aafb75c48 is an unknown value
+RSP=0x0000729723ffba90 is an unknown value
+RBP=0x0000607ab01c7d00 is an unknown value
+RSI=0x0000607ab2b04668 is a global jni handle
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000607ab2cb2de0 is an unknown value
+R10=0x0000000000000000 is an unknown value
+R11=0x0000607aae489e60: PyUnicode_Type+0 in /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python at 0x0000607aae10b000
+R12=0x0000607ab2b04668 is a global jni handle
+R13=0x0000607aafb75c48 is an unknown value
+R14=0x0000000000000000 is an unknown value
+R15=0x000072978411c930 is an unknown value
+
+
+Stack: [0x0000729723800000,0x0000729724000000],  sp=0x0000729723ffba90,  free space=8174k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [_orekit.cpython-310-x86_64-linux-gnu.so+0x10a7a70]  JCCEnv::callObjectMethod(_jobject*, _jmethodID*, ...) const+0xb0
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000006ca800000, size: 3928 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 69632K, used 65847K [0x000000076e300000, 0x0000000776f00000, 0x00000007c0000000)
+  eden space 63488K, 94% used [0x000000076e300000,0x0000000771dad0b0,0x0000000772100000)
+  from space 6144K, 93% used [0x0000000776900000,0x0000000776ea0ec8,0x0000000776f00000)
+  to   space 10240K, 0% used [0x0000000775b00000,0x0000000775b00000,0x0000000776500000)
+ ParOldGen       total 167936K, used 32K [0x00000006ca800000, 0x00000006d4c00000, 0x000000076e300000)
+  object space 167936K, 0% used [0x00000006ca800000,0x00000006ca808000,0x00000006d4c00000)
+ Metaspace       used 14170K, capacity 14791K, committed 15104K, reserved 1062912K
+  class space    used 1884K, capacity 2220K, committed 2304K, reserved 1048576K
+
+Card table byte_map: [0x000072972ba93000,0x000072972c240000] byte_map_base: 0x000072972843f000
+
+Marking Bits: (ParMarkBitMap*) 0x000072973c848e80
+ Begin Bits: [0x000072971b2ad000, 0x000072971f00d000)
+ End Bits:   [0x000072971f00d000, 0x0000729722d6d000)
+
+Polling page: 0x00007297a87ee000
+
+CodeCache: size=245760Kb used=6914Kb max_used=6927Kb free=238846Kb
+ bounds [0x000072972c600000, 0x000072972ccd0000, 0x000072973b600000]
+ total_blobs=2272 nmethods=1817 adapters=368
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 3.066 Thread 0x0000607ab2583800 1814       4       sun.misc.FloatingDecimal::getBinaryToASCIIConverter (183 bytes)
+Event: 3.067 Thread 0x0000607ab257f800 nmethod 1813 0x000072972cc9eb50 code [0x000072972cc9ed40, 0x000072972cc9f500]
+Event: 3.067 Thread 0x0000607ab257f800 1815       4       sun.misc.FloatingDecimal$BinaryToASCIIBuffer::toJavaFormatString (23 bytes)
+Event: 3.069 Thread 0x0000607ab2583800 nmethod 1814 0x000072972ccad010 code [0x000072972ccad1a0, 0x000072972ccad4a8]
+Event: 3.069 Thread 0x0000607ab2583800 1816       4       sun.misc.FloatingDecimal$BinaryToASCIIBuffer::getChars (502 bytes)
+Event: 3.070 Thread 0x0000607ab257f800 nmethod 1815 0x000072972cca4cd0 code [0x000072972cca4e40, 0x000072972cca5208]
+Event: 3.070 Thread 0x0000607ab257f800 1806       4       java.lang.ThreadLocal$ThreadLocalMap::getEntry (42 bytes)
+Event: 3.071 Thread 0x0000607ab257f800 nmethod 1806 0x000072972ccacc50 code [0x000072972ccacda0, 0x000072972ccacec8]
+Event: 3.074 Thread 0x0000607ab2584800 nmethod 1812 0x000072972ccbd490 code [0x000072972ccbd6e0, 0x000072972ccbe750]
+Event: 3.075 Thread 0x0000607ab2583800 nmethod 1816 0x000072972ccbaf90 code [0x000072972ccbb140, 0x000072972ccbb9e8]
+
+GC Heap History (4 events):
+Event: 0.518 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 73728K, used 63488K [0x000000076e300000, 0x0000000773500000, 0x00000007c0000000)
+  eden space 63488K, 100% used [0x000000076e300000,0x0000000772100000,0x0000000772100000)
+  from space 10240K, 0% used [0x0000000772b00000,0x0000000772b00000,0x0000000773500000)
+  to   space 10240K, 0% used [0x0000000772100000,0x0000000772100000,0x0000000772b00000)
+ ParOldGen       total 167936K, used 0K [0x00000006ca800000, 0x00000006d4c00000, 0x000000076e300000)
+  object space 167936K, 0% used [0x00000006ca800000,0x00000006ca800000,0x00000006d4c00000)
+ Metaspace       used 13277K, capacity 13877K, committed 13952K, reserved 1060864K
+  class space    used 1812K, capacity 2151K, committed 2176K, reserved 1048576K
+Event: 0.524 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 73728K, used 9571K [0x000000076e300000, 0x0000000777300000, 0x00000007c0000000)
+  eden space 63488K, 0% used [0x000000076e300000,0x000000076e300000,0x0000000772100000)
+  from space 10240K, 93% used [0x0000000772100000,0x0000000772a58c40,0x0000000772b00000)
+  to   space 10240K, 0% used [0x0000000776900000,0x0000000776900000,0x0000000777300000)
+ ParOldGen       total 167936K, used 24K [0x00000006ca800000, 0x00000006d4c00000, 0x000000076e300000)
+  object space 167936K, 0% used [0x00000006ca800000,0x00000006ca806000,0x00000006d4c00000)
+ Metaspace       used 13277K, capacity 13877K, committed 13952K, reserved 1060864K
+  class space    used 1812K, capacity 2151K, committed 2176K, reserved 1048576K
+}
+Event: 1.167 GC heap before
+{Heap before GC invocations=2 (full 0):
+ PSYoungGen      total 73728K, used 73059K [0x000000076e300000, 0x0000000777300000, 0x00000007c0000000)
+  eden space 63488K, 100% used [0x000000076e300000,0x0000000772100000,0x0000000772100000)
+  from space 10240K, 93% used [0x0000000772100000,0x0000000772a58c40,0x0000000772b00000)
+  to   space 10240K, 0% used [0x0000000776900000,0x0000000776900000,0x0000000777300000)
+ ParOldGen       total 167936K, used 24K [0x00000006ca800000, 0x00000006d4c00000, 0x000000076e300000)
+  object space 167936K, 0% used [0x00000006ca800000,0x00000006ca806000,0x00000006d4c00000)
+ Metaspace       used 14028K, capacity 14599K, committed 14848K, reserved 1062912K
+  class space    used 1876K, capacity 2220K, committed 2304K, reserved 1048576K
+Event: 1.169 GC heap after
+Heap after GC invocations=2 (full 0):
+ PSYoungGen      total 69632K, used 5763K [0x000000076e300000, 0x0000000776f00000, 0x00000007c0000000)
+  eden space 63488K, 0% used [0x000000076e300000,0x000000076e300000,0x0000000772100000)
+  from space 6144K, 93% used [0x0000000776900000,0x0000000776ea0ec8,0x0000000776f00000)
+  to   space 10240K, 0% used [0x0000000775b00000,0x0000000775b00000,0x0000000776500000)
+ ParOldGen       total 167936K, used 32K [0x00000006ca800000, 0x00000006d4c00000, 0x000000076e300000)
+  object space 167936K, 0% used [0x00000006ca800000,0x00000006ca808000,0x00000006d4c00000)
+ Metaspace       used 14028K, capacity 14599K, committed 14848K, reserved 1062912K
+  class space    used 1876K, capacity 2220K, committed 2304K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 0.713 Thread 0x0000607ab078d000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000072972ca52d50 method=org.orekit.time.ChronologicalComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I @ 2
+Event: 0.713 Thread 0x0000607ab078d000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000072972ca52d50 method=org.orekit.time.ChronologicalComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I @ 2
+Event: 0.716 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972ca8aca8 method=java.util.TreeMap.successor(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry; @ 43
+Event: 0.722 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972ca7af8c method=java.util.TreeMap.successor(Ljava/util/TreeMap$Entry;)Ljava/util/TreeMap$Entry; @ 43
+Event: 2.286 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972cbaa414 method=org.hipparchus.util.FastMath.sinCos(D)Lorg/hipparchus/util/SinCos; @ 254
+Event: 2.954 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972ca62d34 method=java.lang.ThreadLocal$ThreadLocalMap.getEntry(Ljava/lang/ThreadLocal;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; @ 21
+Event: 3.010 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972cc525e4 method=java.text.DigitList.set(ZLjava/lang/String;ZZIZ)V @ 123
+Event: 3.046 Thread 0x0000607ab078d000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000072972cc9b4e4 method=sun.misc.FloatingDecimal$BinaryToASCIIBuffer.dtoa(IJIZ)V @ 97
+Event: 3.066 Thread 0x0000607ab078d000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000072972cc1bd74 method=java.util.concurrent.ConcurrentHashMap.get(Ljava/lang/Object;)Ljava/lang/Object; @ 149
+Event: 3.066 Thread 0x0000607ab078d000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000072972cc1bd74 method=java.util.concurrent.ConcurrentHashMap.get(Ljava/lang/Object;)Ljava/lang/Object; @ 149
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.013 Thread 0x0000607ab078d000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x000000076e307d98) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot
+Event: 0.013 Thread 0x0000607ab078d000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x000000076e308080) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prim
+Event: 0.074 Thread 0x0000607ab078d000 Exception <a 'java/security/PrivilegedActionException'> (0x000000076e799828) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.074 Thread 0x0000607ab078d000 Exception <a 'java/security/PrivilegedActionException'> (0x000000076e799c20) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.074 Thread 0x0000607ab078d000 Exception <a 'java/security/PrivilegedActionException'> (0x000000076e79d418) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.074 Thread 0x0000607ab078d000 Exception <a 'java/security/PrivilegedActionException'> (0x000000076e79d810) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/jvm.cpp, line 1514]
+Event: 0.152 Thread 0x0000607ab078d000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x000000076ee50890) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/methodHandles.cpp, line 1194]
+Event: 0.153 Thread 0x0000607ab078d000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x000000076ee5dcc8) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hotspot/src/share/vm/prims/methodHandles.cpp, line 1194]
+Event: 0.408 Thread 0x0000607ab078d000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$comparing$77a9974f$1(Ljava/util/function/Function;Ljava/lang/Object;Ljava/lang/Object;)I> (0x000000077060e128) thrown at [/home/zulu_re/workspace/Zulu/zulu-platform-build/zulu-src.git/hot
+Event: 2.954 Thread 0x0000607ab078d000 Implicit null exception at 0x000072972ca62c7c to 0x000072972ca62d19
+
+Events (10 events):
+Event: 3.066 Thread 0x0000607ab078d000 DEOPT UNPACKING pc=0x000072972c64557a sp=0x00007ffd7668b848 mode 2
+Event: 3.066 Thread 0x0000607ab078d000 Uncommon trap: trap_request=0xffffffde fr.pc=0x000072972cc1bd74
+Event: 3.066 Thread 0x0000607ab078d000 DEOPT PACKING pc=0x000072972cc1bd74 sp=0x00007ffd7668b8c0
+Event: 3.066 Thread 0x0000607ab078d000 DEOPT UNPACKING pc=0x000072972c64557a sp=0x00007ffd7668b868 mode 2
+Event: 3.066 loading class java/text/DecimalFormat$FastPathData
+Event: 3.066 loading class java/text/DecimalFormat$FastPathData done
+Event: 3.066 loading class java/text/DecimalFormat$DigitArrays
+Event: 3.066 loading class java/text/DecimalFormat$DigitArrays done
+Event: 4.033 Executing VM operation: EnableBiasedLocking
+Event: 4.034 Executing VM operation: EnableBiasedLocking done
+
+
+Dynamic libraries:
+6ca800000-6d4c00000 rw-p 00000000 00:00 0 
+6d4c00000-76e300000 ---p 00000000 00:00 0 
+76e300000-776f00000 rw-p 00000000 00:00 0 
+776f00000-7c0000000 ---p 00000000 00:00 0 
+7c0000000-7c0240000 rw-p 00000000 00:00 0 
+7c0240000-800000000 ---p 00000000 00:00 0 
+607aae10b000-607aae165000 r--p 00000000 103:06 6302287                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python3.10
+607aae165000-607aae36b000 r-xp 0005a000 103:06 6302287                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python3.10
+607aae36b000-607aae465000 r--p 00260000 103:06 6302287                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python3.10
+607aae465000-607aae46a000 r--p 00359000 103:06 6302287                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python3.10
+607aae46a000-607aae49c000 rw-p 0035e000 103:06 6302287                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/bin/python3.10
+607aae49c000-607aae4a2000 rw-p 00000000 00:00 0 
+607aaf05b000-607ab3030000 rw-p 00000000 00:00 0                          [heap]
+7296cc000000-7296cc210000 rw-p 00000000 00:00 0 
+7296cc210000-7296d0000000 ---p 00000000 00:00 0 
+7296d0000000-7296d0021000 rw-p 00000000 00:00 0 
+7296d0021000-7296d4000000 ---p 00000000 00:00 0 
+7296d4000000-7296d4021000 rw-p 00000000 00:00 0 
+7296d4021000-7296d8000000 ---p 00000000 00:00 0 
+7296d8000000-7296d8021000 rw-p 00000000 00:00 0 
+7296d8021000-7296dc000000 ---p 00000000 00:00 0 
+7296dc000000-7296dc6f4000 rw-p 00000000 00:00 0 
+7296dc6f4000-7296e0000000 ---p 00000000 00:00 0 
+7296e0000000-7296e0857000 rw-p 00000000 00:00 0 
+7296e0857000-7296e4000000 ---p 00000000 00:00 0 
+7296e4000000-7296e4f70000 rw-p 00000000 00:00 0 
+7296e4f70000-7296e8000000 ---p 00000000 00:00 0 
+7296e8000000-7296e9200000 rw-p 00000000 00:00 0 
+7296e9200000-7296ec000000 ---p 00000000 00:00 0 
+7296ec000000-7296ec021000 rw-p 00000000 00:00 0 
+7296ec021000-7296f0000000 ---p 00000000 00:00 0 
+7296f0000000-7296f0021000 rw-p 00000000 00:00 0 
+7296f0021000-7296f4000000 ---p 00000000 00:00 0 
+7296f4000000-7296f4021000 rw-p 00000000 00:00 0 
+7296f4021000-7296f8000000 ---p 00000000 00:00 0 
+7296f8000000-7296f8021000 rw-p 00000000 00:00 0 
+7296f8021000-7296fc000000 ---p 00000000 00:00 0 
+7296fc000000-7296fc021000 rw-p 00000000 00:00 0 
+7296fc021000-729700000000 ---p 00000000 00:00 0 
+729700000000-729700021000 rw-p 00000000 00:00 0 
+729700021000-729704000000 ---p 00000000 00:00 0 
+729704000000-729704021000 rw-p 00000000 00:00 0 
+729704021000-729708000000 ---p 00000000 00:00 0 
+729708000000-729708021000 rw-p 00000000 00:00 0 
+729708021000-72970c000000 ---p 00000000 00:00 0 
+72970c000000-72970c021000 rw-p 00000000 00:00 0 
+72970c021000-729710000000 ---p 00000000 00:00 0 
+729710000000-729710021000 rw-p 00000000 00:00 0 
+729710021000-729714000000 ---p 00000000 00:00 0 
+729714000000-729714021000 rw-p 00000000 00:00 0 
+729714021000-729718000000 ---p 00000000 00:00 0 
+72971b2ad000-729722d6d000 rw-p 00000000 00:00 0 
+7297230ff000-7297237ff000 rw-p 00000000 00:00 0 
+7297237ff000-729723800000 ---p 00000000 00:00 0 
+729723800000-729724000000 rw-p 00000000 00:00 0 
+729724000000-729724021000 rw-p 00000000 00:00 0 
+729724021000-729728000000 ---p 00000000 00:00 0 
+7297280f6000-729728676000 rw-p 00000000 00:00 0 
+729728676000-7297287f6000 ---p 00000000 00:00 0 
+7297287f6000-729728cb6000 rw-p 00000000 00:00 0 
+729728cb6000-729728ef6000 rw-p 00000000 00:00 0 
+729728ef6000-729728f0e000 r-xp 00000000 103:06 6169293                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnet.so
+729728f0e000-729728f0f000 r--p 00017000 103:06 6169293                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnet.so
+729728f0f000-729728f10000 rw-p 00018000 103:06 6169293                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnet.so
+729728f10000-729728f13000 rw-p 0001e000 103:06 6169293                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnet.so
+729728f13000-729728f24000 r-xp 00000000 103:06 6168894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnio.so
+729728f24000-729728f25000 r--p 00010000 103:06 6168894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnio.so
+729728f25000-729728f26000 rw-p 00011000 103:06 6168894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnio.so
+729728f26000-729728f2b000 rw-p 00017000 103:06 6168894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libnio.so
+729728f2b000-729728f6e000 r--s 0042b000 103:06 5675499                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/orekit-11.0.2.jar
+729728f6e000-729728f6f000 ---p 00000000 00:00 0 
+729728f6f000-72972906f000 rw-p 00000000 00:00 0 
+72972906f000-729729073000 ---p 00000000 00:00 0 
+729729073000-72972916f000 rw-p 00000000 00:00 0 
+72972916f000-729729170000 ---p 00000000 00:00 0 
+729729170000-729729174000 ---p 00000000 00:00 0 
+729729174000-729729270000 rw-p 00000000 00:00 0 
+729729270000-729729271000 ---p 00000000 00:00 0 
+729729271000-729729275000 ---p 00000000 00:00 0 
+729729275000-729729371000 rw-p 00000000 00:00 0 
+729729371000-729729372000 ---p 00000000 00:00 0 
+729729372000-729729376000 ---p 00000000 00:00 0 
+729729376000-729729472000 rw-p 00000000 00:00 0 
+729729472000-729729473000 ---p 00000000 00:00 0 
+729729473000-729729477000 ---p 00000000 00:00 0 
+729729477000-729729573000 rw-p 00000000 00:00 0 
+729729573000-729729577000 ---p 00000000 00:00 0 
+729729577000-729729673000 rw-p 00000000 00:00 0 
+729729673000-7297298eb000 r--p 00000000 07:08 186                        /snap/code/156/usr/lib/locale/aa_DJ.utf8/LC_COLLATE
+7297298eb000-7297298ef000 ---p 00000000 00:00 0 
+7297298ef000-7297299eb000 rw-p 00000000 00:00 0 
+7297299eb000-7297299ef000 ---p 00000000 00:00 0 
+7297299ef000-729729aeb000 rw-p 00000000 00:00 0 
+729729aeb000-729729aec000 ---p 00000000 00:00 0 
+729729aec000-729729bec000 rw-p 00000000 00:00 0 
+729729bec000-729729dc1000 r--s 03d10000 103:06 6168906                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/rt.jar
+729729dc1000-72972ad6d000 rw-p 00000000 00:00 0 
+72972ad6d000-72972ad6e000 ---p 00000000 00:00 0 
+72972ad6e000-72972ae6e000 rw-p 00000000 00:00 0 
+72972ae6e000-72972ae6f000 ---p 00000000 00:00 0 
+72972ae6f000-72972af6f000 rw-p 00000000 00:00 0 
+72972af6f000-72972af70000 ---p 00000000 00:00 0 
+72972af70000-72972b070000 rw-p 00000000 00:00 0 
+72972b070000-72972b071000 ---p 00000000 00:00 0 
+72972b071000-72972b171000 rw-p 00000000 00:00 0 
+72972b171000-72972b172000 ---p 00000000 00:00 0 
+72972b172000-72972b272000 rw-p 00000000 00:00 0 
+72972b272000-72972b273000 ---p 00000000 00:00 0 
+72972b273000-72972b373000 rw-p 00000000 00:00 0 
+72972b373000-72972b374000 ---p 00000000 00:00 0 
+72972b374000-72972b474000 rw-p 00000000 00:00 0 
+72972b474000-72972b475000 ---p 00000000 00:00 0 
+72972b475000-72972b5c7000 rw-p 00000000 00:00 0 
+72972b5c7000-72972ba93000 ---p 00000000 00:00 0 
+72972ba93000-72972bae5000 rw-p 00000000 00:00 0 
+72972bae5000-72972bfb0000 ---p 00000000 00:00 0 
+72972bfb0000-72972bff7000 rw-p 00000000 00:00 0 
+72972bff7000-72972c23f000 ---p 00000000 00:00 0 
+72972c23f000-72972c25c000 rw-p 00000000 00:00 0 
+72972c25c000-72972c600000 ---p 00000000 00:00 0 
+72972c600000-72972ccd0000 rwxp 00000000 00:00 0 
+72972ccd0000-72973b600000 ---p 00000000 00:00 0 
+72973b600000-72973ba00000 rw-p 00000000 00:00 0 
+72973ba00000-72973c772000 r-xp 00000000 103:06 6168522                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/server/libjvm.so
+72973c772000-72973c809000 r--p 00d71000 103:06 6168522                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/server/libjvm.so
+72973c809000-72973c832000 rw-p 00e08000 103:06 6168522                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/server/libjvm.so
+72973c832000-72973c866000 rw-p 00000000 00:00 0 
+72973c866000-72973c86b000 rw-p 010d8000 103:06 6168522                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/server/libjvm.so
+72973c87f000-72973c8cc000 rw-p 00000000 00:00 0 
+72973c8cc000-72973c8f5000 r-xp 00000000 103:06 6168902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libjava.so
+72973c8f5000-72973c8f6000 ---p 00029000 103:06 6168902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libjava.so
+72973c8f6000-72973c8f7000 r--p 00029000 103:06 6168902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libjava.so
+72973c8f7000-72973c8f9000 rw-p 0002a000 103:06 6168902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libjava.so
+72973c8f9000-72973c900000 rw-p 00034000 103:06 6168902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libjava.so
+72973c900000-72973ca00000 rw-p 00000000 00:00 0 
+72973ca00000-72973d463000 r--p 00000000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973d463000-72973eef9000 r-xp 00a63000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973eef9000-72973f7e2000 r--p 024f9000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973f7e2000-72973f7e3000 ---p 02de2000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973f7e3000-72973f866000 r--p 02de2000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973f866000-72973f9b5000 rw-p 02e65000 103:06 5675531                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/_orekit.cpython-310-x86_64-linux-gnu.so
+72973f9b5000-72973f9cd000 rw-p 00000000 00:00 0 
+72973f9db000-72973f9e0000 r--s 00031000 103:06 5675495                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-stat-2.0.jar
+72973f9e0000-72973f9fc000 r-xp 00000000 103:06 6168509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libzip.so
+72973f9fc000-72973f9fd000 r--p 0001b000 103:06 6168509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libzip.so
+72973f9fd000-72973f9fe000 rw-p 0001c000 103:06 6168509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libzip.so
+72973f9fe000-72973fa00000 rw-p 00021000 103:06 6168509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libzip.so
+72973fa00000-72973fc00000 rw-p 00000000 00:00 0 
+72973fc00000-72973fc09000 r--p 00000000 103:06 5676246                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+72973fc09000-72973fe15000 r-xp 00009000 103:06 5676246                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+72973fe15000-72973fe32000 r--p 00215000 103:06 5676246                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+72973fe32000-72973fe33000 r--p 00231000 103:06 5676246                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+72973fe33000-72973fe38000 rw-p 00232000 103:06 5676246                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so
+72973fe38000-72973fe3b000 rw-p 00000000 00:00 0 
+72973fe3f000-72973fe44000 r--s 00028000 103:06 5675494                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-optim-2.0.jar
+72973fe44000-72973fe55000 r--s 00115000 103:06 5675498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-core-2.0.jar
+72973fe55000-72973fe5d000 rw-s 00000000 103:06 2359300                   /tmp/hsperfdata_suraj.parasuram/225151
+72973fe5d000-72973fe6a000 r-xp 00000000 103:06 6169290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libverify.so
+72973fe6a000-72973fe6c000 r--p 0000c000 103:06 6169290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libverify.so
+72973fe6c000-72973fe6d000 rw-p 0000e000 103:06 6169290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libverify.so
+72973fe6d000-72973fe6e000 rw-p 00011000 103:06 6169290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/amd64/libverify.so
+72973fe6e000-72973fe70000 r--p 00000000 103:06 6193529                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so
+72973fe70000-72973fe7b000 r-xp 00002000 103:06 6193529                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so
+72973fe7b000-72973fe7d000 r--p 0000d000 103:06 6193529                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so
+72973fe7d000-72973fe7e000 r--p 0000e000 103:06 6193529                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so
+72973fe7e000-72973fe7f000 rw-p 0000f000 103:06 6193529                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so
+72973fe7f000-72973fe81000 rw-p 00000000 00:00 0 
+72973fe81000-72973fe85000 r--p 00000000 103:06 5676262                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+72973fe85000-72973fe97000 r-xp 00004000 103:06 5676262                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+72973fe97000-72973fe9a000 r--p 00016000 103:06 5676262                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+72973fe9a000-72973fe9b000 r--p 00019000 103:06 5676262                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+72973fe9b000-72973fe9c000 rw-p 0001a000 103:06 5676262                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so
+72973fe9c000-72973fea3000 r--p 00000000 103:06 5676189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+72973fea3000-72973ff06000 r-xp 00007000 103:06 5676189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+72973ff06000-72973ff12000 r--p 0006a000 103:06 5676189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+72973ff12000-72973ff13000 r--p 00076000 103:06 5676189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+72973ff13000-72973ff16000 rw-p 00077000 103:06 5676189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so
+72973ff16000-72973ff18000 rw-p 00000000 00:00 0 
+72973ff18000-72973ff1b000 r--p 00000000 103:06 5674998                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+72973ff1b000-72973ff23000 r-xp 00003000 103:06 5674998                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+72973ff23000-72973ff26000 r--p 0000b000 103:06 5674998                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+72973ff26000-72973ff27000 r--p 0000e000 103:06 5674998                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+72973ff27000-72973ff28000 rw-p 0000f000 103:06 5674998                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so
+72973ff28000-729740028000 rw-p 00000000 00:00 0 
+729740028000-72974002e000 r--p 00000000 103:06 5676238                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+72974002e000-729740060000 r-xp 00006000 103:06 5676238                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+729740060000-729740068000 r--p 00038000 103:06 5676238                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+729740068000-729740069000 r--p 00040000 103:06 5676238                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+729740069000-72974006b000 rw-p 00041000 103:06 5676238                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so
+72974006b000-72974006c000 rw-p 00000000 00:00 0 
+72974006c000-729740071000 r--p 00000000 103:06 6458668                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+729740071000-72974008e000 r-xp 00005000 103:06 6458668                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+72974008e000-729740095000 r--p 00022000 103:06 6458668                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+729740095000-729740096000 r--p 00028000 103:06 6458668                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+729740096000-729740098000 rw-p 00029000 103:06 6458668                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so
+729740098000-72974009e000 r--p 00000000 103:06 6459868                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+72974009e000-7297400e2000 r-xp 00006000 103:06 6459868                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7297400e2000-7297400ec000 r--p 0004a000 103:06 6459868                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7297400ec000-7297400ed000 r--p 00054000 103:06 6459868                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7297400ed000-7297400ef000 rw-p 00055000 103:06 6459868                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so
+7297400ef000-7297401f0000 rw-p 00000000 00:00 0 
+7297401f0000-7297401f2000 r--p 00000000 103:06 6194598                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7297401f2000-7297401f5000 r-xp 00002000 103:06 6194598                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7297401f5000-7297401f7000 r--p 00005000 103:06 6194598                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7297401f7000-7297401f8000 r--p 00006000 103:06 6194598                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7297401f8000-7297401f9000 rw-p 00007000 103:06 6194598                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so
+7297401f9000-7297402f9000 rw-p 00000000 00:00 0 
+7297402f9000-729740300000 r--p 00000000 103:06 5676185                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+729740300000-72974041b000 r-xp 00007000 103:06 5676185                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+72974041b000-729740429000 r--p 00122000 103:06 5676185                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+729740429000-72974042a000 r--p 00130000 103:06 5676185                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+72974042a000-72974042d000 rw-p 00131000 103:06 5676185                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so
+72974042d000-72974042f000 rw-p 00000000 00:00 0 
+72974042f000-729740435000 r--p 00000000 103:06 5676291                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+729740435000-72974045b000 r-xp 00006000 103:06 5676291                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+72974045b000-729740463000 r--p 0002c000 103:06 5676291                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+729740463000-729740464000 r--p 00033000 103:06 5676291                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+729740464000-729740466000 rw-p 00034000 103:06 5676291                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so
+729740466000-729740467000 rw-p 00000000 00:00 0 
+729740467000-729740471000 r--p 00000000 103:06 5676201                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+729740471000-729740511000 r-xp 0000a000 103:06 5676201                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+729740511000-729740528000 r--p 000aa000 103:06 5676201                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+729740528000-729740529000 r--p 000c0000 103:06 5676201                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+729740529000-729740531000 rw-p 000c1000 103:06 5676201                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so
+729740531000-729740634000 rw-p 00000000 00:00 0 
+729740634000-729740638000 r--p 00000000 103:06 5676183                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+729740638000-729740640000 r-xp 00004000 103:06 5676183                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+729740640000-729740643000 r--p 0000c000 103:06 5676183                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+729740643000-729740644000 r--p 0000e000 103:06 5676183                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+729740644000-729740645000 rw-p 0000f000 103:06 5676183                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so
+729740645000-72974064c000 r--p 00000000 103:06 5674991                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+72974064c000-72974068d000 r-xp 00007000 103:06 5674991                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+72974068d000-729740699000 r--p 00048000 103:06 5674991                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+729740699000-72974069a000 r--p 00053000 103:06 5674991                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+72974069a000-72974069d000 rw-p 00054000 103:06 5674991                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so
+72974069d000-72974079f000 rw-p 00000000 00:00 0 
+72974079f000-7297407a6000 r--p 00000000 103:06 5676225                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+7297407a6000-72974085c000 r-xp 00007000 103:06 5676225                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+72974085c000-729740869000 r--p 000bd000 103:06 5676225                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+729740869000-72974086a000 r--p 000ca000 103:06 5676225                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+72974086a000-72974086d000 rw-p 000cb000 103:06 5676225                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so
+72974086d000-72974086f000 rw-p 00000000 00:00 0 
+72974086f000-729740875000 r--p 00000000 103:06 5676204                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+729740875000-7297408ac000 r-xp 00006000 103:06 5676204                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7297408ac000-7297408b6000 r--p 0003d000 103:06 5676204                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7297408b6000-7297408b7000 r--p 00046000 103:06 5676204                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7297408b7000-7297408b9000 rw-p 00047000 103:06 5676204                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so
+7297408b9000-7297409ba000 rw-p 00000000 00:00 0 
+7297409ba000-7297409be000 r--p 00000000 103:06 5676266                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7297409be000-7297409d0000 r-xp 00004000 103:06 5676266                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7297409d0000-7297409d4000 r--p 00016000 103:06 5676266                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7297409d4000-7297409d5000 r--p 0001a000 103:06 5676266                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7297409d5000-7297409d6000 rw-p 0001b000 103:06 5676266                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so
+7297409d6000-7297409d7000 rw-p 00000000 00:00 0 
+7297409d7000-7297409dc000 r--p 00000000 103:06 5674993                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7297409dc000-7297409fa000 r-xp 00005000 103:06 5674993                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+7297409fa000-729740a01000 r--p 00023000 103:06 5674993                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+729740a01000-729740a02000 r--p 00029000 103:06 5674993                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+729740a02000-729740a04000 rw-p 0002a000 103:06 5674993                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so
+729740a04000-729740a09000 r--p 00000000 103:06 5676235                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+729740a09000-729740a31000 r-xp 00005000 103:06 5676235                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+729740a31000-729740a39000 r--p 0002d000 103:06 5676235                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+729740a39000-729740a3a000 r--p 00034000 103:06 5676235                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+729740a3a000-729740a3c000 rw-p 00035000 103:06 5676235                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so
+729740a3c000-729740b3d000 rw-p 00000000 00:00 0 
+729740b3d000-729740b46000 r--p 00000000 103:06 5676315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+729740b46000-729740be3000 r-xp 00009000 103:06 5676315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+729740be3000-729740bfa000 r--p 000a6000 103:06 5676315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+729740bfa000-729740bfb000 r--p 000bd000 103:06 5676315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+729740bfb000-729740c01000 rw-p 000be000 103:06 5676315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so
+729740c01000-729740d03000 rw-p 00000000 00:00 0 
+729740d03000-729740d0c000 r--p 00000000 103:06 5676248                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+729740d0c000-729740eca000 r-xp 00009000 103:06 5676248                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+729740eca000-729740ee6000 r--p 001c7000 103:06 5676248                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+729740ee6000-729740ee7000 r--p 001e2000 103:06 5676248                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+729740ee7000-729740eeb000 rw-p 001e3000 103:06 5676248                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so
+729740eeb000-729740eef000 rw-p 00000000 00:00 0 
+729740eef000-729740ef4000 r--p 00000000 103:06 6457448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+729740ef4000-729740f18000 r-xp 00005000 103:06 6457448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+729740f18000-729740f20000 r--p 00029000 103:06 6457448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+729740f20000-729740f21000 r--p 00031000 103:06 6457448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+729740f21000-729740f23000 rw-p 00032000 103:06 6457448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so
+729740f23000-729740f2a000 r--p 00000000 103:06 6458656                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+729740f2a000-729740f7c000 r-xp 00007000 103:06 6458656                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+729740f7c000-729740f94000 r--p 00059000 103:06 6458656                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+729740f94000-729740f95000 r--p 00071000 103:06 6458656                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+729740f95000-729740f98000 rw-p 00072000 103:06 6458656                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so
+729740f98000-729740f99000 rw-p 00000000 00:00 0 
+729740f99000-729740f9f000 r--p 00000000 103:06 6459807                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+729740f9f000-729740fe2000 r-xp 00006000 103:06 6459807                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+729740fe2000-729740fec000 r--p 00049000 103:06 6459807                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+729740fec000-729740fed000 r--p 00053000 103:06 6459807                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+729740fed000-729740fef000 rw-p 00054000 103:06 6459807                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so
+729740fef000-729740ff0000 rw-p 00000000 00:00 0 
+729740ff0000-729740ff7000 r--p 00000000 103:06 6458903                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+729740ff7000-72974103f000 r-xp 00007000 103:06 6458903                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+72974103f000-72974104b000 r--p 0004f000 103:06 6458903                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+72974104b000-72974104c000 r--p 0005b000 103:06 6458903                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+72974104c000-72974104e000 rw-p 0005c000 103:06 6458903                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so
+72974104e000-729741050000 rw-p 00000000 00:00 0 
+729741050000-729741054000 r--p 00000000 103:06 5676212                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+729741054000-72974105f000 r-xp 00004000 103:06 5676212                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+72974105f000-729741062000 r--p 0000f000 103:06 5676212                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+729741062000-729741063000 r--p 00012000 103:06 5676212                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+729741063000-729741064000 rw-p 00013000 103:06 5676212                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so
+729741064000-72974106a000 r--p 00000000 103:06 6459081                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+72974106a000-7297410a0000 r-xp 00006000 103:06 6459081                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7297410a0000-7297410a9000 r--p 0003c000 103:06 6459081                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7297410a9000-7297410aa000 r--p 00045000 103:06 6459081                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7297410aa000-7297410ac000 rw-p 00046000 103:06 6459081                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so
+7297410ac000-7297410ad000 rw-p 00000000 00:00 0 
+7297410ad000-7297410b3000 r--p 00000000 103:06 6459311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7297410b3000-7297410ea000 r-xp 00006000 103:06 6459311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7297410ea000-7297410f4000 r--p 0003d000 103:06 6459311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7297410f4000-7297410f5000 r--p 00046000 103:06 6459311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7297410f5000-7297410f7000 rw-p 00047000 103:06 6459311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so
+7297410f7000-7297410f8000 rw-p 00000000 00:00 0 
+7297410f8000-7297410fd000 r--p 00000000 103:06 6458897                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+7297410fd000-72974112a000 r-xp 00005000 103:06 6458897                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+72974112a000-729741133000 r--p 00032000 103:06 6458897                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+729741133000-729741134000 r--p 0003a000 103:06 6458897                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+729741134000-729741136000 rw-p 0003b000 103:06 6458897                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so
+729741136000-729741137000 rw-p 00000000 00:00 0 
+729741137000-72974113f000 r--p 00000000 103:06 6457753                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+72974113f000-7297411ab000 r-xp 00008000 103:06 6457753                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7297411ab000-7297411bf000 r--p 00074000 103:06 6457753                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7297411bf000-7297411c0000 r--p 00088000 103:06 6457753                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7297411c0000-7297411c3000 rw-p 00089000 103:06 6457753                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so
+7297411c3000-7297411c5000 rw-p 00000000 00:00 0 
+7297411c5000-7297411ca000 r--p 00000000 103:06 6459475                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7297411ca000-7297411ec000 r-xp 00005000 103:06 6459475                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7297411ec000-7297411f9000 r--p 00027000 103:06 6459475                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7297411f9000-7297411fa000 r--p 00034000 103:06 6459475                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7297411fa000-7297411fc000 rw-p 00035000 103:06 6459475                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so
+7297411fc000-7297411fd000 rw-p 00000000 00:00 0 
+7297411fd000-729741205000 r--p 00000000 103:06 6457290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+729741205000-729741269000 r-xp 00008000 103:06 6457290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+729741269000-72974128a000 r--p 0006c000 103:06 6457290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+72974128a000-72974128b000 r--p 0008c000 103:06 6457290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+72974128b000-72974128e000 rw-p 0008d000 103:06 6457290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so
+72974128e000-729741290000 rw-p 00000000 00:00 0 
+729741290000-72974129c000 r--p 00000000 103:06 6459823                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+72974129c000-72974135e000 r-xp 0000c000 103:06 6459823                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+72974135e000-729741383000 r--p 000ce000 103:06 6459823                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+729741383000-729741384000 r--p 000f3000 103:06 6459823                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+729741384000-72974138e000 rw-p 000f4000 103:06 6459823                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so
+72974138e000-729741391000 rw-p 00000000 00:00 0 
+729741391000-729741397000 r--p 00000000 103:06 6458797                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+729741397000-7297413c6000 r-xp 00006000 103:06 6458797                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7297413c6000-7297413cf000 r--p 00035000 103:06 6458797                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7297413cf000-7297413d0000 r--p 0003e000 103:06 6458797                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7297413d0000-7297413d2000 rw-p 0003f000 103:06 6458797                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so
+7297413d2000-7297414d3000 rw-p 00000000 00:00 0 
+7297414d3000-7297414e4000 r--p 00000000 103:06 5676286                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7297414e4000-729741670000 r-xp 00011000 103:06 5676286                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+729741670000-7297416a8000 r--p 0019d000 103:06 5676286                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7297416a8000-7297416a9000 r--p 001d4000 103:06 5676286                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7297416a9000-7297416b7000 rw-p 001d5000 103:06 5676286                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so
+7297416b7000-7297416be000 rw-p 00000000 00:00 0 
+7297416be000-7297416c9000 r--p 00000000 103:06 5676304                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7297416c9000-7297417d3000 r-xp 0000b000 103:06 5676304                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7297417d3000-7297417f1000 r--p 00115000 103:06 5676304                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7297417f1000-7297417f2000 r--p 00132000 103:06 5676304                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7297417f2000-7297417f9000 rw-p 00133000 103:06 5676304                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so
+7297417f9000-7297417fb000 rw-p 00000000 00:00 0 
+7297417fb000-7297517fb000 rw-p 00000000 00:00 0 
+7297517fb000-7297517fc000 ---p 00000000 00:00 0 
+7297517fc000-729751ffc000 rw-p 00000000 00:00 0 
+729751ffc000-729759ffc000 rw-p 00000000 00:00 0 
+729759ffc000-729759ffd000 ---p 00000000 00:00 0 
+729759ffd000-72975a7fd000 rw-p 00000000 00:00 0 
+72975a7fd000-7297627fd000 rw-p 00000000 00:00 0 
+7297627fd000-7297627fe000 ---p 00000000 00:00 0 
+7297627fe000-729762ffe000 rw-p 00000000 00:00 0 
+729762ffe000-72976affe000 rw-p 00000000 00:00 0 
+72976affe000-72976afff000 ---p 00000000 00:00 0 
+72976afff000-72976b7ff000 rw-p 00000000 00:00 0 
+72976b7ff000-7297737ff000 rw-p 00000000 00:00 0 
+7297737ff000-729773800000 ---p 00000000 00:00 0 
+729773800000-729774000000 rw-p 00000000 00:00 0 
+729774000000-72977c000000 rw-p 00000000 00:00 0 
+72977c000000-72977c02c000 rw-p 00000000 00:00 0 
+72977c02c000-729780000000 ---p 00000000 00:00 0 
+729780000000-729780021000 rw-p 00000000 00:00 0 
+729780021000-729784000000 ---p 00000000 00:00 0 
+729784001000-729784004000 r--p 00000000 103:06 5676226                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+729784004000-72978400c000 r-xp 00003000 103:06 5676226                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+72978400c000-72978400e000 r--p 0000b000 103:06 5676226                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+72978400e000-72978400f000 r--p 0000d000 103:06 5676226                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+72978400f000-729784010000 rw-p 0000e000 103:06 5676226                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so
+729784010000-729784012000 r--p 00000000 103:06 6194498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+729784012000-729784017000 r-xp 00002000 103:06 6194498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+729784017000-729784018000 r--p 00007000 103:06 6194498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+729784018000-729784019000 r--p 00008000 103:06 6194498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+729784019000-72978401a000 rw-p 00009000 103:06 6194498                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so
+72978401a000-72978401e000 r--p 00000000 103:06 6458189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+72978401e000-729784025000 r-xp 00004000 103:06 6458189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+729784025000-729784027000 r--p 0000b000 103:06 6458189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+729784027000-729784028000 r--p 0000d000 103:06 6458189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+729784028000-729784029000 rw-p 0000e000 103:06 6458189                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so
+729784029000-72978402d000 r--p 00000000 103:06 6458057                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+72978402d000-729784045000 r-xp 00004000 103:06 6458057                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+729784045000-72978404a000 r--p 0001c000 103:06 6458057                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+72978404a000-72978404b000 r--p 00020000 103:06 6458057                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+72978404b000-72978404c000 rw-p 00021000 103:06 6458057                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so
+72978404c000-729784050000 r--p 00000000 103:06 6458605                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+729784050000-72978405a000 r-xp 00004000 103:06 6458605                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+72978405a000-72978405d000 r--p 0000e000 103:06 6458605                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+72978405d000-72978405e000 r--p 00011000 103:06 6458605                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+72978405e000-72978405f000 rw-p 00012000 103:06 6458605                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so
+72978405f000-729784064000 r--p 00000000 103:06 6460772                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+729784064000-729784085000 r-xp 00005000 103:06 6460772                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+729784085000-72978408b000 r--p 00026000 103:06 6460772                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+72978408b000-72978408c000 r--p 0002b000 103:06 6460772                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+72978408c000-72978408d000 rw-p 0002c000 103:06 6460772                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so
+72978408d000-72978408e000 rw-p 00000000 00:00 0 
+72978408e000-729784093000 r--p 00000000 103:06 5676172                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+729784093000-7297840b4000 r-xp 00005000 103:06 5676172                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7297840b4000-7297840bb000 r--p 00026000 103:06 5676172                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7297840bb000-7297840bc000 r--p 0002c000 103:06 5676172                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7297840bc000-7297840bd000 rw-p 0002d000 103:06 5676172                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so
+7297840bd000-7297841be000 rw-p 00000000 00:00 0 
+7297841be000-7297841c6000 r--p 00000000 103:06 5791616                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+7297841c6000-729784232000 r-xp 00008000 103:06 5791616                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+729784232000-729784285000 r--p 00074000 103:06 5791616                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+729784285000-729784286000 r--p 000c7000 103:06 5791616                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+729784286000-729784288000 rw-p 000c8000 103:06 5791616                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so
+729784288000-72978428a000 rw-p 00000000 00:00 0 
+72978428a000-72978428d000 r--p 00000000 103:06 5791390                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+72978428d000-72978429b000 r-xp 00003000 103:06 5791390                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+72978429b000-7297842a0000 r--p 00011000 103:06 5791390                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7297842a0000-7297842a1000 r--p 00016000 103:06 5791390                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7297842a1000-7297842a2000 rw-p 00017000 103:06 5791390                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so
+7297842a2000-7297842a7000 r--p 00000000 103:06 5790659                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7297842a7000-7297842e6000 r-xp 00005000 103:06 5790659                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7297842e6000-7297842ef000 r--p 00044000 103:06 5790659                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7297842ef000-7297842f0000 r--p 0004c000 103:06 5790659                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7297842f0000-7297842f1000 rw-p 0004d000 103:06 5790659                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so
+7297842f1000-7297842f2000 rw-p 00000000 00:00 0 
+7297842f2000-7297842f7000 r--p 00000000 103:06 5791100                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+7297842f7000-729784341000 r-xp 00005000 103:06 5791100                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+729784341000-729784391000 r--p 0004f000 103:06 5791100                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+729784391000-729784392000 r--p 0009e000 103:06 5791100                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+729784392000-729784393000 rw-p 0009f000 103:06 5791100                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so
+729784393000-729784616000 rw-p 00000000 00:00 0 
+729784616000-729784617000 ---p 00000000 00:00 0 
+729784617000-729784e17000 rw-p 00000000 00:00 0 
+729784e17000-729784e18000 ---p 00000000 00:00 0 
+729784e18000-729785618000 rw-p 00000000 00:00 0 
+729785618000-729785738000 r--p 00000000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+729785738000-729785739000 r-xp 00120000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+729785739000-729785740000 ---p 00121000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+729785740000-7297875c8000 r-xp 00128000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+7297875c8000-7297877c7000 r--p 01fb0000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+7297877c7000-7297877d5000 r--p 021ae000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+7297877d5000-7297877e7000 rw-p 021bc000 103:06 5654540                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libopenblasp-r0.3.26.so
+7297877e7000-7297877f8000 rw-p 00000000 00:00 0 
+7297877fa000-7297877ff000 r--s 0003b000 103:06 5675496                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-ode-2.0.jar
+7297877ff000-729787800000 ---p 00000000 00:00 0 
+729787800000-729788000000 rw-p 00000000 00:00 0 
+729788000000-729788021000 rw-p 00000000 00:00 0 
+729788021000-72978c000000 ---p 00000000 00:00 0 
+72978c000000-72978c021000 rw-p 00000000 00:00 0 
+72978c021000-729790000000 ---p 00000000 00:00 0 
+729790000000-729790021000 rw-p 00000000 00:00 0 
+729790021000-729794000000 ---p 00000000 00:00 0 
+729794000000-729794021000 rw-p 00000000 00:00 0 
+729794021000-729798000000 ---p 00000000 00:00 0 
+729798000000-729798021000 rw-p 00000000 00:00 0 
+729798021000-72979c000000 ---p 00000000 00:00 0 
+72979c000000-72979c200000 rw-p 00000000 00:00 0 
+72979c200000-72979c22c000 r--p 00000000 103:06 5791481                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+72979c22c000-72979c63e000 r-xp 0002c000 103:06 5791481                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+72979c63e000-72979c798000 r--p 0043e000 103:06 5791481                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+72979c798000-72979c79c000 r--p 00598000 103:06 5791481                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+72979c79c000-72979c7be000 rw-p 0059c000 103:06 5791481                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so
+72979c7be000-72979c7de000 rw-p 00000000 00:00 0 
+72979c7df000-72979c7e4000 r--s 0003c000 103:06 5675497                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-geometry-2.0.jar
+72979c7e4000-72979c7e7000 r--p 00000000 103:06 5791344                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+72979c7e7000-72979c7f3000 r-xp 00003000 103:06 5791344                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+72979c7f3000-72979c7f7000 r--p 0000f000 103:06 5791344                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+72979c7f7000-72979c7f8000 r--p 00013000 103:06 5791344                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+72979c7f8000-72979c7f9000 rw-p 00014000 103:06 5791344                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so
+72979c7f9000-72979c7fa000 ---p 00000000 00:00 0 
+72979c7fa000-72979cffa000 rw-p 00000000 00:00 0 
+72979cffa000-72979cffb000 ---p 00000000 00:00 0 
+72979cffb000-72979d7fb000 rw-p 00000000 00:00 0 
+72979d7fb000-72979d7fc000 ---p 00000000 00:00 0 
+72979d7fc000-72979dffc000 rw-p 00000000 00:00 0 
+72979dffc000-72979dffd000 ---p 00000000 00:00 0 
+72979dffd000-72979e7fd000 rw-p 00000000 00:00 0 
+72979e7fd000-72979e7fe000 ---p 00000000 00:00 0 
+72979e7fe000-72979effe000 rw-p 00000000 00:00 0 
+72979effe000-72979efff000 ---p 00000000 00:00 0 
+72979efff000-72979f7ff000 rw-p 00000000 00:00 0 
+72979f7ff000-72979f800000 ---p 00000000 00:00 0 
+72979f800000-7297a0000000 rw-p 00000000 00:00 0 
+7297a0000000-7297a005f000 rw-p 00000000 00:00 0 
+7297a005f000-7297a4000000 ---p 00000000 00:00 0 
+7297a4001000-7297a4007000 r--s 000d4000 103:06 6168904                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/jfr.jar
+7297a4007000-7297a4009000 r--p 00000000 103:06 5676242                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so
+7297a4009000-7297a400e000 r-xp 00002000 103:06 5676242                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so
+7297a400e000-7297a400f000 r--p 00007000 103:06 5676242                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so
+7297a400f000-7297a4010000 r--p 00008000 103:06 5676242                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so
+7297a4010000-7297a4011000 rw-p 00009000 103:06 5676242                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so
+7297a4011000-7297a4014000 r--p 00000000 103:06 5790610                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7297a4014000-7297a4021000 r-xp 00003000 103:06 5790610                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7297a4021000-7297a4026000 r--p 00010000 103:06 5790610                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7297a4026000-7297a4027000 r--p 00014000 103:06 5790610                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7297a4027000-7297a4028000 rw-p 00015000 103:06 5790610                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so
+7297a4028000-7297a402c000 r--p 00000000 103:06 5791342                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7297a402c000-7297a4057000 r-xp 00004000 103:06 5791342                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7297a4057000-7297a405b000 r--p 0002f000 103:06 5791342                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7297a405b000-7297a405c000 r--p 00033000 103:06 5791342                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7297a405c000-7297a405d000 rw-p 00034000 103:06 5791342                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so
+7297a405d000-7297a405e000 rw-p 00000000 00:00 0 
+7297a405e000-7297a4065000 r--p 00000000 103:06 5791524                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7297a4065000-7297a4085000 r-xp 00007000 103:06 5791524                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7297a4085000-7297a408a000 r--p 00027000 103:06 5791524                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7297a408a000-7297a408b000 r--p 0002c000 103:06 5791524                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7297a408b000-7297a408c000 rw-p 0002d000 103:06 5791524                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so
+7297a408c000-7297a4095000 r--p 00000000 103:06 5791134                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7297a4095000-7297a40a8000 r-xp 00009000 103:06 5791134                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7297a40a8000-7297a40ad000 r--p 0001c000 103:06 5791134                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7297a40ad000-7297a40ae000 r--p 00021000 103:06 5791134                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7297a40ae000-7297a40af000 rw-p 00022000 103:06 5791134                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so
+7297a40af000-7297a40b2000 r--p 00000000 103:06 5645104                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libquadmath.so.0.0.0
+7297a40b2000-7297a40cf000 r-xp 00003000 103:06 5645104                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libquadmath.so.0.0.0
+7297a40cf000-7297a40e6000 r--p 00020000 103:06 5645104                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libquadmath.so.0.0.0
+7297a40e6000-7297a40e7000 r--p 00036000 103:06 5645104                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libquadmath.so.0.0.0
+7297a40e7000-7297a40e8000 rw-p 00037000 103:06 5645104                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libquadmath.so.0.0.0
+7297a40e8000-7297a4107000 r--p 00000000 103:06 6030908                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgfortran.so.5.0.0
+7297a4107000-7297a4262000 r-xp 0001f000 103:06 6030908                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgfortran.so.5.0.0
+7297a4262000-7297a4290000 r--p 0017a000 103:06 6030908                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgfortran.so.5.0.0
+7297a4290000-7297a4291000 r--p 001a8000 103:06 6030908                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgfortran.so.5.0.0
+7297a4291000-7297a4293000 rw-p 001a9000 103:06 6030908                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgfortran.so.5.0.0
+7297a4293000-7297a4493000 rw-p 00000000 00:00 0 
+7297a4493000-7297a4494000 ---p 00000000 00:00 0 
+7297a4494000-7297a4c94000 rw-p 00000000 00:00 0 
+7297a4c94000-7297a4c95000 ---p 00000000 00:00 0 
+7297a4c95000-7297a5795000 rw-p 00000000 00:00 0 
+7297a5795000-7297a579e000 r--p 00000000 103:06 6056448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-310-x86_64-linux-gnu.so
+7297a579e000-7297a5811000 r-xp 00009000 103:06 6056448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-310-x86_64-linux-gnu.so
+7297a5811000-7297a581a000 r--p 0007c000 103:06 6056448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-310-x86_64-linux-gnu.so
+7297a581a000-7297a581b000 r--p 00085000 103:06 6056448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-310-x86_64-linux-gnu.so
+7297a581b000-7297a5820000 rw-p 00086000 103:06 6056448                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-310-x86_64-linux-gnu.so
+7297a5820000-7297a6122000 rw-p 00000000 00:00 0 
+7297a6122000-7297a6125000 r--p 00000000 103:06 6193732                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so
+7297a6125000-7297a6129000 r-xp 00003000 103:06 6193732                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so
+7297a6129000-7297a6231000 r--p 00007000 103:06 6193732                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so
+7297a6231000-7297a6232000 r--p 0010f000 103:06 6193732                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so
+7297a6232000-7297a6233000 rw-p 00110000 103:06 6193732                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so
+7297a6233000-7297a6633000 rw-p 00000000 00:00 0 
+7297a6633000-7297a6646000 r--p 00000000 103:06 6180411                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsqlite3.so.0.8.6
+7297a6646000-7297a6756000 r-xp 00013000 103:06 6180411                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsqlite3.so.0.8.6
+7297a6756000-7297a678c000 r--p 00123000 103:06 6180411                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsqlite3.so.0.8.6
+7297a678c000-7297a6790000 r--p 00159000 103:06 6180411                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsqlite3.so.0.8.6
+7297a6790000-7297a6794000 rw-p 0015d000 103:06 6180411                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsqlite3.so.0.8.6
+7297a6794000-7297a6795000 rw-p 00000000 00:00 0 
+7297a6797000-7297a679a000 r--p 00000000 103:06 5791493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7297a679a000-7297a67a1000 r-xp 00003000 103:06 5791493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7297a67a1000-7297a67a4000 r--p 0000a000 103:06 5791493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7297a67a4000-7297a67a5000 r--p 0000c000 103:06 5791493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7297a67a5000-7297a67a6000 rw-p 0000d000 103:06 5791493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so
+7297a67a6000-7297a67ab000 r--p 00000000 103:06 5791368                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7297a67ab000-7297a67c9000 r-xp 00005000 103:06 5791368                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7297a67c9000-7297a67d3000 r--p 00023000 103:06 5791368                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7297a67d3000-7297a67d4000 r--p 0002c000 103:06 5791368                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7297a67d4000-7297a67d6000 rw-p 0002d000 103:06 5791368                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so
+7297a67d6000-7297a6ad6000 rw-p 00000000 00:00 0 
+7297a6ad6000-7297a6ad8000 r--p 00000000 103:06 6194609                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so
+7297a6ad8000-7297a6ad9000 r-xp 00002000 103:06 6194609                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so
+7297a6ad9000-7297a6ada000 r--p 00003000 103:06 6194609                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so
+7297a6ada000-7297a6adb000 r--p 00003000 103:06 6194609                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so
+7297a6adb000-7297a6adc000 rw-p 00004000 103:06 6194609                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so
+7297a6adc000-7297a6bdc000 rw-p 00000000 00:00 0 
+7297a6bdc000-7297a6bde000 r--p 00000000 103:06 5532535                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libuuid.so.1.3.0
+7297a6bde000-7297a6be2000 r-xp 00002000 103:06 5532535                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libuuid.so.1.3.0
+7297a6be2000-7297a6be3000 r--p 00006000 103:06 5532535                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libuuid.so.1.3.0
+7297a6be3000-7297a6be4000 r--p 00006000 103:06 5532535                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libuuid.so.1.3.0
+7297a6be4000-7297a6be5000 rw-p 00007000 103:06 5532535                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libuuid.so.1.3.0
+7297a6be5000-7297a6be6000 r--p 00000000 103:06 6194756                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7297a6be6000-7297a6be7000 r-xp 00001000 103:06 6194756                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7297a6be7000-7297a6be8000 r--p 00002000 103:06 6194756                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7297a6be8000-7297a6be9000 r--p 00002000 103:06 6194756                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7297a6be9000-7297a6bea000 rw-p 00003000 103:06 6194756                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so
+7297a6bea000-7297a6cea000 rw-p 00000000 00:00 0 
+7297a6cea000-7297a6cee000 r--p 00000000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6cee000-7297a6d05000 r-xp 00004000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6d05000-7297a6d10000 r--p 0001b000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6d10000-7297a6d11000 ---p 00026000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6d11000-7297a6d12000 r--p 00026000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6d12000-7297a6d13000 rw-p 00027000 103:06 5536111                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/liblzma.so.5.2.6
+7297a6d13000-7297a6d16000 r--p 00000000 103:06 6193715                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7297a6d16000-7297a6d1a000 r-xp 00003000 103:06 6193715                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7297a6d1a000-7297a6d1d000 r--p 00007000 103:06 6193715                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7297a6d1d000-7297a6d1e000 r--p 00009000 103:06 6193715                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7297a6d1e000-7297a6d1f000 rw-p 0000a000 103:06 6193715                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so
+7297a6d1f000-7297a6d21000 r--p 00000000 103:06 5531633                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libbz2.so.1.0.8
+7297a6d21000-7297a6d2f000 r-xp 00002000 103:06 5531633                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libbz2.so.1.0.8
+7297a6d2f000-7297a6d31000 r--p 00010000 103:06 5531633                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libbz2.so.1.0.8
+7297a6d31000-7297a6d32000 r--p 00011000 103:06 5531633                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libbz2.so.1.0.8
+7297a6d32000-7297a6d33000 rw-p 00012000 103:06 5531633                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libbz2.so.1.0.8
+7297a6d33000-7297a6d3a000 r--p 00000000 103:06 6192645                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7297a6d3a000-7297a6d6c000 r-xp 00007000 103:06 6192645                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7297a6d6c000-7297a6d7c000 r--p 00039000 103:06 6192645                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7297a6d7c000-7297a6d7d000 r--p 00049000 103:06 6192645                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7297a6d7d000-7297a6d80000 rw-p 0004a000 103:06 6192645                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so
+7297a6d80000-7297a6f80000 rw-p 00000000 00:00 0 
+7297a6f80000-7297a6f90000 r--p 00000000 103:06 6301311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libtinfow.so.6.4
+7297a6f90000-7297a6fab000 r-xp 00010000 103:06 6301311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libtinfow.so.6.4
+7297a6fab000-7297a6fbc000 r--p 0002b000 103:06 6301311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libtinfow.so.6.4
+7297a6fbc000-7297a6fc0000 r--p 0003b000 103:06 6301311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libtinfow.so.6.4
+7297a6fc0000-7297a6fc1000 rw-p 0003f000 103:06 6301311                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libtinfow.so.6.4
+7297a6fc1000-7297a6fcd000 r--p 00000000 103:06 5532850                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libncursesw.so.6.4
+7297a6fcd000-7297a6ff2000 r-xp 0000c000 103:06 5532850                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libncursesw.so.6.4
+7297a6ff2000-7297a6ffa000 r--p 00031000 103:06 5532850                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libncursesw.so.6.4
+7297a6ffa000-7297a6ffb000 r--p 00039000 103:06 5532850                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libncursesw.so.6.4
+7297a6ffb000-7297a6ffc000 rw-p 0003a000 103:06 5532850                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libncursesw.so.6.4
+7297a6ffd000-7297a6ffe000 r--s 00004000 103:06 5675492                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-filtering-2.0.jar
+7297a6ffe000-7297a7000000 r--p 00000000 103:06 5675005                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so
+7297a7000000-7297a7005000 r-xp 00002000 103:06 5675005                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so
+7297a7005000-7297a7007000 r--p 00007000 103:06 5675005                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so
+7297a7007000-7297a7008000 r--p 00008000 103:06 5675005                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so
+7297a7008000-7297a7009000 rw-p 00009000 103:06 5675005                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so
+7297a7009000-7297a700a000 r--p 00000000 103:06 5790739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7297a700a000-7297a7019000 r-xp 00001000 103:06 5790739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7297a7019000-7297a701b000 r--p 00010000 103:06 5790739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7297a701b000-7297a701c000 r--p 00011000 103:06 5790739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7297a701c000-7297a701d000 rw-p 00012000 103:06 5790739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so
+7297a701d000-7297a7022000 r--p 00000000 103:06 6193538                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so
+7297a7022000-7297a7049000 r-xp 00005000 103:06 6193538                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so
+7297a7049000-7297a7055000 r--p 0002c000 103:06 6193538                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so
+7297a7055000-7297a7057000 r--p 00037000 103:06 6193538                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so
+7297a7057000-7297a7059000 rw-p 00039000 103:06 6193538                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so
+7297a7059000-7297a705c000 r--p 00000000 103:06 6194106                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so
+7297a705c000-7297a7060000 r-xp 00003000 103:06 6194106                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so
+7297a7060000-7297a7063000 r--p 00007000 103:06 6194106                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so
+7297a7063000-7297a7064000 r--p 00009000 103:06 6194106                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so
+7297a7064000-7297a7065000 rw-p 0000a000 103:06 6194106                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so
+7297a7065000-7297a7067000 r--p 00000000 103:06 6194315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so
+7297a7067000-7297a7068000 r-xp 00002000 103:06 6194315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so
+7297a7068000-7297a7069000 r--p 00003000 103:06 6194315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so
+7297a7069000-7297a706a000 r--p 00003000 103:06 6194315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so
+7297a706a000-7297a706b000 rw-p 00004000 103:06 6194315                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so
+7297a706b000-7297a706d000 r--p 00000000 103:06 6193592                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so
+7297a706d000-7297a706f000 r-xp 00002000 103:06 6193592                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so
+7297a706f000-7297a7070000 r--p 00004000 103:06 6193592                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so
+7297a7070000-7297a7071000 r--p 00005000 103:06 6193592                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so
+7297a7071000-7297a7072000 rw-p 00006000 103:06 6193592                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so
+7297a7072000-7297a7079000 r--p 00000000 103:06 6193640                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so
+7297a7079000-7297a7085000 r-xp 00007000 103:06 6193640                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so
+7297a7085000-7297a708a000 r--p 00013000 103:06 6193640                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so
+7297a708a000-7297a708b000 r--p 00018000 103:06 6193640                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so
+7297a708b000-7297a708d000 rw-p 00019000 103:06 6193640                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so
+7297a708d000-7297a7092000 r--p 00000000 103:06 6194679                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so
+7297a7092000-7297a70a3000 r-xp 00005000 103:06 6194679                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so
+7297a70a3000-7297a70a9000 r--p 00016000 103:06 6194679                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so
+7297a70a9000-7297a70aa000 r--p 0001b000 103:06 6194679                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so
+7297a70aa000-7297a70ac000 rw-p 0001c000 103:06 6194679                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so
+7297a70ac000-7297a70ae000 r--p 00000000 103:06 6194290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so
+7297a70ae000-7297a70b5000 r-xp 00002000 103:06 6194290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so
+7297a70b5000-7297a70b7000 r--p 00009000 103:06 6194290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so
+7297a70b7000-7297a70b8000 r--p 0000a000 103:06 6194290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so
+7297a70b8000-7297a70b9000 rw-p 0000b000 103:06 6194290                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so
+7297a70b9000-7297a70bd000 r--p 00000000 103:06 6193718                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7297a70bd000-7297a70c2000 r-xp 00004000 103:06 6193718                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7297a70c2000-7297a70c6000 r--p 00009000 103:06 6193718                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7297a70c6000-7297a70c7000 r--p 0000d000 103:06 6193718                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7297a70c7000-7297a70c8000 rw-p 0000e000 103:06 6193718                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so
+7297a70c8000-7297a71c8000 rw-p 00000000 00:00 0 
+7297a71c8000-7297a71cb000 r--p 00000000 103:06 6168822                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/utils.cpython-310-x86_64-linux-gnu.so
+7297a71cb000-7297a71d1000 r-xp 00003000 103:06 6168822                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/utils.cpython-310-x86_64-linux-gnu.so
+7297a71d1000-7297a71d3000 r--p 00009000 103:06 6168822                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/utils.cpython-310-x86_64-linux-gnu.so
+7297a71d3000-7297a71d4000 r--p 0000b000 103:06 6168822                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/utils.cpython-310-x86_64-linux-gnu.so
+7297a71d4000-7297a71d5000 rw-p 0000c000 103:06 6168822                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/utils.cpython-310-x86_64-linux-gnu.so
+7297a71d5000-7297a71d8000 r--p 00000000 103:06 6168595                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/error.cpython-310-x86_64-linux-gnu.so
+7297a71d8000-7297a71dc000 r-xp 00003000 103:06 6168595                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/error.cpython-310-x86_64-linux-gnu.so
+7297a71dc000-7297a71de000 r--p 00007000 103:06 6168595                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/error.cpython-310-x86_64-linux-gnu.so
+7297a71de000-7297a71df000 r--p 00008000 103:06 6168595                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/error.cpython-310-x86_64-linux-gnu.so
+7297a71df000-7297a71e0000 rw-p 00009000 103:06 6168595                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/error.cpython-310-x86_64-linux-gnu.so
+7297a71e0000-7297a71e3000 r--p 00000000 103:06 6168735                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_version.cpython-310-x86_64-linux-gnu.so
+7297a71e3000-7297a71e7000 r-xp 00003000 103:06 6168735                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_version.cpython-310-x86_64-linux-gnu.so
+7297a71e7000-7297a71e9000 r--p 00007000 103:06 6168735                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_version.cpython-310-x86_64-linux-gnu.so
+7297a71e9000-7297a71ea000 r--p 00008000 103:06 6168735                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_version.cpython-310-x86_64-linux-gnu.so
+7297a71ea000-7297a71eb000 rw-p 00009000 103:06 6168735                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_version.cpython-310-x86_64-linux-gnu.so
+7297a71eb000-7297a71ee000 r--p 00000000 103:06 6168771                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_proxy_steerable.cpython-310-x86_64-linux-gnu.so
+7297a71ee000-7297a71f5000 r-xp 00003000 103:06 6168771                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_proxy_steerable.cpython-310-x86_64-linux-gnu.so
+7297a71f5000-7297a71f7000 r--p 0000a000 103:06 6168771                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_proxy_steerable.cpython-310-x86_64-linux-gnu.so
+7297a71f7000-7297a71f8000 r--p 0000c000 103:06 6168771                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_proxy_steerable.cpython-310-x86_64-linux-gnu.so
+7297a71f8000-7297a71f9000 rw-p 0000d000 103:06 6168771                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_proxy_steerable.cpython-310-x86_64-linux-gnu.so
+7297a71f9000-7297a71fd000 r--p 00000000 103:06 6168800                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_poll.cpython-310-x86_64-linux-gnu.so
+7297a71fd000-7297a7207000 r-xp 00004000 103:06 6168800                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_poll.cpython-310-x86_64-linux-gnu.so
+7297a7207000-7297a720a000 r--p 0000e000 103:06 6168800                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_poll.cpython-310-x86_64-linux-gnu.so
+7297a720a000-7297a720b000 r--p 00010000 103:06 6168800                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_poll.cpython-310-x86_64-linux-gnu.so
+7297a720b000-7297a720c000 rw-p 00011000 103:06 6168800                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_poll.cpython-310-x86_64-linux-gnu.so
+7297a720c000-7297a7211000 r--p 00000000 103:06 6193902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so
+7297a7211000-7297a7222000 r-xp 00005000 103:06 6193902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so
+7297a7222000-7297a7228000 r--p 00016000 103:06 6193902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so
+7297a7228000-7297a7229000 r--p 0001c000 103:06 6193902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so
+7297a7229000-7297a722b000 rw-p 0001d000 103:06 6193902                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so
+7297a722b000-7297a722d000 r--p 00000000 103:06 6194326                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so
+7297a722d000-7297a7231000 r-xp 00002000 103:06 6194326                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so
+7297a7231000-7297a7232000 r--p 00006000 103:06 6194326                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so
+7297a7232000-7297a7233000 r--p 00006000 103:06 6194326                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so
+7297a7233000-7297a7234000 rw-p 00007000 103:06 6194326                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so
+7297a7234000-7297a7239000 r--p 00000000 103:06 6168638                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/message.cpython-310-x86_64-linux-gnu.so
+7297a7239000-7297a7247000 r-xp 00005000 103:06 6168638                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/message.cpython-310-x86_64-linux-gnu.so
+7297a7247000-7297a724b000 r--p 00013000 103:06 6168638                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/message.cpython-310-x86_64-linux-gnu.so
+7297a724b000-7297a724c000 r--p 00016000 103:06 6168638                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/message.cpython-310-x86_64-linux-gnu.so
+7297a724c000-7297a724d000 rw-p 00017000 103:06 6168638                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/message.cpython-310-x86_64-linux-gnu.so
+7297a724d000-7297a724e000 rw-p 00000000 00:00 0 
+7297a724e000-7297a7253000 r--p 00000000 103:06 6168835                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/socket.cpython-310-x86_64-linux-gnu.so
+7297a7253000-7297a726d000 r-xp 00005000 103:06 6168835                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/socket.cpython-310-x86_64-linux-gnu.so
+7297a726d000-7297a7273000 r--p 0001f000 103:06 6168835                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/socket.cpython-310-x86_64-linux-gnu.so
+7297a7273000-7297a7274000 r--p 00025000 103:06 6168835                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/socket.cpython-310-x86_64-linux-gnu.so
+7297a7274000-7297a7275000 rw-p 00026000 103:06 6168835                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/socket.cpython-310-x86_64-linux-gnu.so
+7297a7275000-7297a7276000 rw-p 00000000 00:00 0 
+7297a7276000-7297a731f000 r--p 00000000 103:06 6031124                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libstdc++.so.6.0.32
+7297a731f000-7297a73bf000 r-xp 000a9000 103:06 6031124                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libstdc++.so.6.0.32
+7297a73bf000-7297a7446000 r--p 00149000 103:06 6031124                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libstdc++.so.6.0.32
+7297a7446000-7297a7451000 r--p 001cf000 103:06 6031124                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libstdc++.so.6.0.32
+7297a7451000-7297a7455000 rw-p 001da000 103:06 6031124                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libstdc++.so.6.0.32
+7297a7455000-7297a7459000 rw-p 00000000 00:00 0 
+7297a7459000-7297a7470000 r--p 00000000 103:06 5788364                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libzmq.so.5.2.5
+7297a7470000-7297a74d9000 r-xp 00017000 103:06 5788364                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libzmq.so.5.2.5
+7297a74d9000-7297a74f7000 r--p 00080000 103:06 5788364                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libzmq.so.5.2.5
+7297a74f7000-7297a74ff000 r--p 0009d000 103:06 5788364                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libzmq.so.5.2.5
+7297a74ff000-7297a7500000 rw-p 000a5000 103:06 5788364                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libzmq.so.5.2.5
+7297a7500000-7297a7600000 rw-p 00000000 00:00 0 
+7297a7600000-7297a76c3000 r--p 00000000 103:06 6299509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libcrypto.so.3
+7297a76c3000-7297a79ee000 r-xp 000c3000 103:06 6299509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libcrypto.so.3
+7297a79ee000-7297a7ad2000 r--p 003ee000 103:06 6299509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libcrypto.so.3
+7297a7ad2000-7297a7b35000 r--p 004d2000 103:06 6299509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libcrypto.so.3
+7297a7b35000-7297a7b38000 rw-p 00535000 103:06 6299509                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libcrypto.so.3
+7297a7b38000-7297a7b3b000 rw-p 00000000 00:00 0 
+7297a7b3b000-7297a7b3c000 r--s 00007000 103:06 5675493                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-fitting-2.0.jar
+7297a7b3c000-7297a7b3d000 r--s 00003000 103:06 6168919                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/jre/lib/cat.jar
+7297a7b3d000-7297a7b3e000 r--p 00000000 07:08 866                        /snap/code/156/usr/lib/locale/as_IN/LC_NUMERIC
+7297a7b3e000-7297a7b3f000 r--p 00000000 07:08 2227                       /snap/code/156/usr/lib/locale/en_IN/LC_TIME
+7297a7b3f000-7297a7b41000 r--p 00000000 103:06 6194179                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so
+7297a7b41000-7297a7b43000 r-xp 00002000 103:06 6194179                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so
+7297a7b43000-7297a7b44000 r--p 00004000 103:06 6194179                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so
+7297a7b44000-7297a7b45000 r--p 00004000 103:06 6194179                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so
+7297a7b45000-7297a7b46000 rw-p 00005000 103:06 6194179                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so
+7297a7b46000-7297a7b48000 r--p 00000000 103:06 6192865                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so
+7297a7b48000-7297a7b49000 r-xp 00002000 103:06 6192865                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so
+7297a7b49000-7297a7b4a000 r--p 00003000 103:06 6192865                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so
+7297a7b4a000-7297a7b4b000 r--p 00003000 103:06 6192865                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so
+7297a7b4b000-7297a7b4c000 rw-p 00004000 103:06 6192865                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so
+7297a7b4c000-7297a7b50000 r--p 00000000 103:06 6168749                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/context.cpython-310-x86_64-linux-gnu.so
+7297a7b50000-7297a7b59000 r-xp 00004000 103:06 6168749                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/context.cpython-310-x86_64-linux-gnu.so
+7297a7b59000-7297a7b5c000 r--p 0000d000 103:06 6168749                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/context.cpython-310-x86_64-linux-gnu.so
+7297a7b5c000-7297a7b5d000 r--p 00010000 103:06 6168749                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/context.cpython-310-x86_64-linux-gnu.so
+7297a7b5d000-7297a7b5e000 rw-p 00011000 103:06 6168749                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/context.cpython-310-x86_64-linux-gnu.so
+7297a7b5e000-7297a7b62000 r--p 00000000 103:06 5645101                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgcc_s.so.1
+7297a7b62000-7297a7b74000 r-xp 00004000 103:06 5645101                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgcc_s.so.1
+7297a7b74000-7297a7b77000 r--p 00016000 103:06 5645101                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgcc_s.so.1
+7297a7b77000-7297a7b78000 r--p 00019000 103:06 5645101                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgcc_s.so.1
+7297a7b78000-7297a7b79000 rw-p 0001a000 103:06 5645101                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libgcc_s.so.1
+7297a7b79000-7297a7b87000 r--p 00000000 103:06 6065508                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsodium.so.23.3.0
+7297a7b87000-7297a7bc0000 r-xp 0000e000 103:06 6065508                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsodium.so.23.3.0
+7297a7bc0000-7297a7bd2000 r--p 00047000 103:06 6065508                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsodium.so.23.3.0
+7297a7bd2000-7297a7bd3000 r--p 00058000 103:06 6065508                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsodium.so.23.3.0
+7297a7bd3000-7297a7bd4000 rw-p 00059000 103:06 6065508                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libsodium.so.23.3.0
+7297a7bd4000-7297a7bd7000 r--p 00000000 103:06 6168809                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_device.cpython-310-x86_64-linux-gnu.so
+7297a7bd7000-7297a7bde000 r-xp 00003000 103:06 6168809                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_device.cpython-310-x86_64-linux-gnu.so
+7297a7bde000-7297a7be0000 r--p 0000a000 103:06 6168809                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_device.cpython-310-x86_64-linux-gnu.so
+7297a7be0000-7297a7be1000 r--p 0000c000 103:06 6168809                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_device.cpython-310-x86_64-linux-gnu.so
+7297a7be1000-7297a7be2000 rw-p 0000d000 103:06 6168809                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/zmq/backend/cython/_device.cpython-310-x86_64-linux-gnu.so
+7297a7be2000-7297a7be4000 r--p 00000000 103:06 5532313                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libffi.so.8.1.0
+7297a7be4000-7297a7bea000 r-xp 00002000 103:06 5532313                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libffi.so.8.1.0
+7297a7bea000-7297a7bec000 r--p 00008000 103:06 5532313                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libffi.so.8.1.0
+7297a7bec000-7297a7bed000 r--p 00009000 103:06 5532313                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libffi.so.8.1.0
+7297a7bed000-7297a7bee000 rw-p 0000a000 103:06 5532313                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libffi.so.8.1.0
+7297a7bee000-7297a7bf5000 r--p 00000000 103:06 6193428                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7297a7bf5000-7297a7c03000 r-xp 00007000 103:06 6193428                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7297a7c03000-7297a7c09000 r--p 00015000 103:06 6193428                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7297a7c09000-7297a7c0a000 r--p 0001a000 103:06 6193428                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7297a7c0a000-7297a7c0e000 rw-p 0001b000 103:06 6193428                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so
+7297a7c0e000-7297a7c10000 r--p 00000000 103:06 6193451                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7297a7c10000-7297a7c11000 r-xp 00002000 103:06 6193451                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7297a7c11000-7297a7c12000 r--p 00003000 103:06 6193451                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7297a7c12000-7297a7c13000 r--p 00003000 103:06 6193451                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7297a7c13000-7297a7c14000 rw-p 00004000 103:06 6193451                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so
+7297a7c14000-7297a7c19000 r--p 00000000 103:06 6193620                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so
+7297a7c19000-7297a7c1e000 r-xp 00005000 103:06 6193620                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so
+7297a7c1e000-7297a7c22000 r--p 0000a000 103:06 6193620                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so
+7297a7c22000-7297a7c23000 r--p 0000d000 103:06 6193620                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so
+7297a7c23000-7297a7c25000 rw-p 0000e000 103:06 6193620                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so
+7297a7c25000-7297a7c26000 r--p 00000000 103:06 6193466                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so
+7297a7c26000-7297a7c27000 r-xp 00001000 103:06 6193466                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so
+7297a7c27000-7297a7c28000 r--p 00002000 103:06 6193466                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so
+7297a7c28000-7297a7c29000 r--p 00002000 103:06 6193466                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so
+7297a7c29000-7297a7c2a000 rw-p 00003000 103:06 6193466                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so
+7297a7c2a000-7297a7c2d000 r--p 00000000 103:06 5532554                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libz.so.1.2.13
+7297a7c2d000-7297a7c3c000 r-xp 00003000 103:06 5532554                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libz.so.1.2.13
+7297a7c3c000-7297a7c43000 r--p 00012000 103:06 5532554                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libz.so.1.2.13
+7297a7c43000-7297a7c44000 r--p 00018000 103:06 5532554                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libz.so.1.2.13
+7297a7c44000-7297a7c45000 rw-p 00019000 103:06 5532554                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libz.so.1.2.13
+7297a7c45000-7297a7c47000 r--p 00000000 103:06 6193984                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so
+7297a7c47000-7297a7c4b000 r-xp 00002000 103:06 6193984                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so
+7297a7c4b000-7297a7c4d000 r--p 00006000 103:06 6193984                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so
+7297a7c4d000-7297a7c4e000 r--p 00008000 103:06 6193984                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so
+7297a7c4e000-7297a7c4f000 rw-p 00009000 103:06 6193984                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so
+7297a7c4f000-7297a7c53000 r--p 00000000 103:06 6193519                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so
+7297a7c53000-7297a7c58000 r-xp 00004000 103:06 6193519                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so
+7297a7c58000-7297a7c5c000 r--p 00009000 103:06 6193519                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so
+7297a7c5c000-7297a7c5d000 r--p 0000c000 103:06 6193519                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so
+7297a7c5d000-7297a7c5e000 rw-p 0000d000 103:06 6193519                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so
+7297a7c5e000-7297a7c83000 r--p 00000000 103:06 6713825                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libssl.so.3
+7297a7c83000-7297a7d08000 r-xp 00025000 103:06 6713825                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libssl.so.3
+7297a7d08000-7297a7d34000 r--p 000aa000 103:06 6713825                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libssl.so.3
+7297a7d34000-7297a7d3f000 r--p 000d5000 103:06 6713825                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libssl.so.3
+7297a7d3f000-7297a7d43000 rw-p 000e0000 103:06 6713825                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/libssl.so.3
+7297a7d43000-7297a7d56000 r--p 00000000 103:06 6193011                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7297a7d56000-7297a7d60000 r-xp 00013000 103:06 6193011                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7297a7d60000-7297a7d6e000 r--p 0001d000 103:06 6193011                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7297a7d6e000-7297a7d6f000 r--p 0002b000 103:06 6193011                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7297a7d6f000-7297a7d77000 rw-p 0002c000 103:06 6193011                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so
+7297a7d77000-7297a7e77000 rw-p 00000000 00:00 0 
+7297a7e77000-7297a7e7b000 r--p 00000000 103:06 6192895                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so
+7297a7e7b000-7297a7e82000 r-xp 00004000 103:06 6192895                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so
+7297a7e82000-7297a7e86000 r--p 0000b000 103:06 6192895                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so
+7297a7e86000-7297a7e87000 r--p 0000f000 103:06 6192895                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so
+7297a7e87000-7297a7e88000 rw-p 00010000 103:06 6192895                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so
+7297a7e88000-7297a7f88000 rw-p 00000000 00:00 0 
+7297a7f88000-7297a7f89000 r--p 00000000 07:08 346                        /snap/code/156/usr/lib/locale/anp_IN/LC_MONETARY
+7297a7f89000-7297a7f8a000 r--p 00000000 07:08 1955                       /snap/code/156/usr/lib/locale/en_AG/LC_MESSAGES/SYS_LC_MESSAGES
+7297a7f8a000-7297a7f8b000 r--p 00000000 07:08 195                        /snap/code/156/usr/lib/locale/aa_DJ.utf8/LC_PAPER
+7297a7f8b000-7297a7f8c000 r--p 00000000 07:08 2153                       /snap/code/156/usr/lib/locale/en_HK.utf8/LC_NAME
+7297a7f8c000-7297a7f8e000 r--p 00000000 103:06 6192762                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7297a7f8e000-7297a7f90000 r-xp 00002000 103:06 6192762                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7297a7f90000-7297a7f92000 r--p 00004000 103:06 6192762                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7297a7f92000-7297a7f93000 r--p 00005000 103:06 6192762                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7297a7f93000-7297a7f94000 rw-p 00006000 103:06 6192762                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so
+7297a7f94000-7297a7f97000 r--p 00000000 103:06 6192894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7297a7f97000-7297a7f98000 r-xp 00003000 103:06 6192894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7297a7f98000-7297a7f9a000 r--p 00004000 103:06 6192894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7297a7f9a000-7297a7f9b000 r--p 00005000 103:06 6192894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7297a7f9b000-7297a7f9d000 rw-p 00006000 103:06 6192894                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so
+7297a7f9d000-7297a7fa5000 r--p 00000000 103:06 6194298                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_curses.cpython-310-x86_64-linux-gnu.so
+7297a7fa5000-7297a7fb2000 r-xp 00008000 103:06 6194298                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_curses.cpython-310-x86_64-linux-gnu.so
+7297a7fb2000-7297a7fbd000 r--p 00015000 103:06 6194298                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_curses.cpython-310-x86_64-linux-gnu.so
+7297a7fbd000-7297a7fbe000 r--p 0001f000 103:06 6194298                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_curses.cpython-310-x86_64-linux-gnu.so
+7297a7fbe000-7297a7fc0000 rw-p 00020000 103:06 6194298                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_curses.cpython-310-x86_64-linux-gnu.so
+7297a7fc0000-7297a7fc1000 r--p 00000000 103:06 5675296                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/tornado/speedups.abi3.so
+7297a7fc1000-7297a7fc2000 r-xp 00001000 103:06 5675296                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/tornado/speedups.abi3.so
+7297a7fc2000-7297a7fc3000 r--p 00002000 103:06 5675296                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/tornado/speedups.abi3.so
+7297a7fc3000-7297a7fc4000 r--p 00002000 103:06 5675296                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/tornado/speedups.abi3.so
+7297a7fc4000-7297a7fc5000 rw-p 00003000 103:06 5675296                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/tornado/speedups.abi3.so
+7297a7fc5000-7297a7fc8000 r--p 00000000 103:06 6193617                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
+7297a7fc8000-7297a7fcc000 r-xp 00003000 103:06 6193617                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
+7297a7fcc000-7297a7fcf000 r--p 00007000 103:06 6193617                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
+7297a7fcf000-7297a7fd0000 r--p 00009000 103:06 6193617                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
+7297a7fd0000-7297a7fd1000 rw-p 0000a000 103:06 6193617                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
+7297a7fd1000-7297a80d1000 rw-p 00000000 00:00 0 
+7297a80d1000-7297a80d5000 r--p 00000000 103:06 6194177                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so
+7297a80d5000-7297a80dc000 r-xp 00004000 103:06 6194177                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so
+7297a80dc000-7297a80e0000 r--p 0000b000 103:06 6194177                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so
+7297a80e0000-7297a80e1000 r--p 0000e000 103:06 6194177                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so
+7297a80e1000-7297a80e2000 rw-p 0000f000 103:06 6194177                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so
+7297a80e2000-7297a80e5000 r--p 00000000 103:06 6193655                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so
+7297a80e5000-7297a80e8000 r-xp 00003000 103:06 6193655                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so
+7297a80e8000-7297a80ea000 r--p 00006000 103:06 6193655                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so
+7297a80ea000-7297a80eb000 r--p 00008000 103:06 6193655                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so
+7297a80eb000-7297a80ec000 rw-p 00009000 103:06 6193655                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so
+7297a80ec000-7297a80ee000 r--p 00000000 103:06 6193669                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so
+7297a80ee000-7297a80f0000 r-xp 00002000 103:06 6193669                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so
+7297a80f0000-7297a80f1000 r--p 00004000 103:06 6193669                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so
+7297a80f1000-7297a80f2000 r--p 00004000 103:06 6193669                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so
+7297a80f2000-7297a80f3000 rw-p 00005000 103:06 6193669                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so
+7297a80f3000-7297a80f6000 r--p 00000000 103:06 6193910                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7297a80f6000-7297a80fc000 r-xp 00003000 103:06 6193910                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7297a80fc000-7297a80fe000 r--p 00009000 103:06 6193910                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7297a80fe000-7297a80ff000 r--p 0000a000 103:06 6193910                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7297a80ff000-7297a8100000 rw-p 0000b000 103:06 6193910                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so
+7297a8100000-7297a8400000 rw-p 00000000 00:00 0 
+7297a8400000-7297a8428000 r--p 00000000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a8428000-7297a85bd000 r-xp 00028000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a85bd000-7297a8615000 r--p 001bd000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a8615000-7297a8616000 ---p 00215000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a8616000-7297a861a000 r--p 00215000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a861a000-7297a861c000 rw-p 00219000 103:06 395366                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7297a861c000-7297a8629000 rw-p 00000000 00:00 0 
+7297a8629000-7297a862a000 r--p 00000000 07:08 2215                       /snap/code/156/usr/lib/locale/en_IN/LC_ADDRESS
+7297a862a000-7297a862b000 r--p 00000000 07:08 350                        /snap/code/156/usr/lib/locale/anp_IN/LC_TELEPHONE
+7297a862b000-7297a862c000 r--p 00000000 07:08 189                        /snap/code/156/usr/lib/locale/aa_DJ.utf8/LC_MEASUREMENT
+7297a862c000-7297a8631000 r--p 00000000 103:06 6194407                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so
+7297a8631000-7297a8639000 r-xp 00005000 103:06 6194407                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so
+7297a8639000-7297a8641000 r--p 0000d000 103:06 6194407                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so
+7297a8641000-7297a8642000 r--p 00014000 103:06 6194407                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so
+7297a8642000-7297a8643000 rw-p 00015000 103:06 6194407                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so
+7297a8643000-7297a8644000 r--p 00000000 103:06 6193471                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so
+7297a8644000-7297a8647000 r-xp 00001000 103:06 6193471                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so
+7297a8647000-7297a864a000 r--p 00004000 103:06 6193471                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so
+7297a864a000-7297a864b000 r--p 00006000 103:06 6193471                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so
+7297a864b000-7297a864c000 rw-p 00007000 103:06 6193471                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so
+7297a864c000-7297a864d000 r--p 00000000 103:06 6194739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7297a864d000-7297a864e000 r-xp 00001000 103:06 6194739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7297a864e000-7297a864f000 r--p 00002000 103:06 6194739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7297a864f000-7297a8650000 r--p 00002000 103:06 6194739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7297a8650000-7297a8651000 rw-p 00003000 103:06 6194739                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so
+7297a8651000-7297a86a5000 r--p 00000000 07:08 187                        /snap/code/156/usr/lib/locale/aa_DJ.utf8/LC_CTYPE
+7297a86a5000-7297a86a8000 rw-p 00000000 00:00 0 
+7297a86a8000-7297a86a9000 r--p 00000000 103:06 395407                    /usr/lib/x86_64-linux-gnu/librt.so.1
+7297a86a9000-7297a86aa000 r-xp 00001000 103:06 395407                    /usr/lib/x86_64-linux-gnu/librt.so.1
+7297a86aa000-7297a86ab000 r--p 00002000 103:06 395407                    /usr/lib/x86_64-linux-gnu/librt.so.1
+7297a86ab000-7297a86ac000 r--p 00002000 103:06 395407                    /usr/lib/x86_64-linux-gnu/librt.so.1
+7297a86ac000-7297a86ad000 rw-p 00003000 103:06 395407                    /usr/lib/x86_64-linux-gnu/librt.so.1
+7297a86ad000-7297a86af000 rw-p 00000000 00:00 0 
+7297a86af000-7297a86bd000 r--p 00000000 103:06 395377                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7297a86bd000-7297a8739000 r-xp 0000e000 103:06 395377                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7297a8739000-7297a8794000 r--p 0008a000 103:06 395377                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7297a8794000-7297a8795000 r--p 000e4000 103:06 395377                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7297a8795000-7297a8796000 rw-p 000e5000 103:06 395377                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7297a8796000-7297a8797000 r--p 00000000 103:06 395415                    /usr/lib/x86_64-linux-gnu/libutil.so.1
+7297a8797000-7297a8798000 r-xp 00001000 103:06 395415                    /usr/lib/x86_64-linux-gnu/libutil.so.1
+7297a8798000-7297a8799000 r--p 00002000 103:06 395415                    /usr/lib/x86_64-linux-gnu/libutil.so.1
+7297a8799000-7297a879a000 r--p 00002000 103:06 395415                    /usr/lib/x86_64-linux-gnu/libutil.so.1
+7297a879a000-7297a879b000 rw-p 00003000 103:06 395415                    /usr/lib/x86_64-linux-gnu/libutil.so.1
+7297a879b000-7297a879c000 r--p 00000000 103:06 395371                    /usr/lib/x86_64-linux-gnu/libdl.so.2
+7297a879c000-7297a879d000 r-xp 00001000 103:06 395371                    /usr/lib/x86_64-linux-gnu/libdl.so.2
+7297a879d000-7297a879e000 r--p 00002000 103:06 395371                    /usr/lib/x86_64-linux-gnu/libdl.so.2
+7297a879e000-7297a879f000 r--p 00002000 103:06 395371                    /usr/lib/x86_64-linux-gnu/libdl.so.2
+7297a879f000-7297a87a0000 rw-p 00003000 103:06 395371                    /usr/lib/x86_64-linux-gnu/libdl.so.2
+7297a87a0000-7297a87a1000 r--p 00000000 103:06 395397                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7297a87a1000-7297a87a2000 r-xp 00001000 103:06 395397                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7297a87a2000-7297a87a3000 r--p 00002000 103:06 395397                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7297a87a3000-7297a87a4000 r--p 00002000 103:06 395397                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7297a87a4000-7297a87a5000 rw-p 00003000 103:06 395397                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7297a87a5000-7297a87a6000 r--p 00000000 07:08 2218                       /snap/code/156/usr/lib/locale/en_IN/LC_IDENTIFICATION
+7297a87a6000-7297a87a7000 rw-p 00000000 00:00 0 
+7297a87a7000-7297a87a9000 r--p 00000000 103:06 6192996                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so
+7297a87a9000-7297a87aa000 r-xp 00002000 103:06 6192996                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so
+7297a87aa000-7297a87ac000 r--p 00003000 103:06 6192996                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so
+7297a87ac000-7297a87ad000 r--p 00004000 103:06 6192996                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so
+7297a87ad000-7297a87ae000 rw-p 00005000 103:06 6192996                   /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so
+7297a87ae000-7297a87b5000 r--s 00000000 103:06 395745                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7297a87b5000-7297a87b7000 rw-p 00000000 00:00 0 
+7297a87b7000-7297a87b9000 r--p 00000000 103:06 395358                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7297a87b9000-7297a87e3000 r-xp 00002000 103:06 395358                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7297a87e3000-7297a87ee000 r--p 0002c000 103:06 395358                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7297a87ee000-7297a87ef000 r--p 00000000 00:00 0 
+7297a87ef000-7297a87f1000 r--p 00037000 103:06 395358                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7297a87f1000-7297a87f3000 rw-p 00039000 103:06 395358                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffd76592000-7ffd76596000 ---p 00000000 00:00 0 
+7ffd76596000-7ffd76692000 rw-p 00000000 00:00 0                          [stack]
+7ffd7672e000-7ffd76732000 r--p 00000000 00:00 0                          [vvar]
+7ffd76732000-7ffd76734000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): /home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/orekit-11.0.2.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-core-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-fitting-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-filtering-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-geometry-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-ode-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-optim-2.0.jar:/home/suraj.parasuram/miniforge3/envs/mda-core-env/lib/python3.10/site-packages/orekit/hipparchus-stat-2.0.jar
+Launcher Type: generic
+
+Environment Variables:
+PATH=/home/suraj.parasuram/miniforge3/envs/mda-core-env/bin:/home/suraj.parasuram/.nvm/versions/node/v20.12.1/bin:/home/suraj.parasuram/miniforge3/bin:/home/suraj.parasuram/miniforge3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/suraj.parasuram/.nvm/versions/node/v20.12.1/bin:/home/suraj.parasuram/miniforge3/bin:/home/suraj.parasuram/miniforge3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+USERNAME=suraj.parasuram
+SHELL=/bin/bash
+DISPLAY=:1
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb4ad20], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb4ad20], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x96ecb0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x96ecb0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x96ecb0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x96ecb0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x96f260], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x96f1a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [python+0xd908e], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_ONSTACK
+SIGTERM: [libjvm.so+0x96f1a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x96f1a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.4 LTS"
+
+uname:Linux 6.5.0-26-generic #26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Mar 12 10:22:43 UTC 2 x86_64
+libc:glibc 2.35 NPTL 2.35 
+rlimit: STACK 8192k, CORE 0k, NPROC 62519, NOFILE 1048576, AS infinity
+load average:0.56 0.59 0.59
+
+/proc/meminfo:
+MemTotal:       16081512 kB
+MemFree:         1936764 kB
+MemAvailable:    9297160 kB
+Buffers:          124404 kB
+Cached:          8272012 kB
+SwapCached:            4 kB
+Active:          7724892 kB
+Inactive:        4793480 kB
+Active(anon):    4810472 kB
+Inactive(anon):   514424 kB
+Active(file):    2914420 kB
+Inactive(file):  4279056 kB
+Unevictable:      480956 kB
+Mlocked:              52 kB
+SwapTotal:       2097148 kB
+SwapFree:        2096636 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               908 kB
+Writeback:             0 kB
+AnonPages:       4603264 kB
+Mapped:          1545856 kB
+Shmem:           1202680 kB
+KReclaimable:     506420 kB
+Slab:             774068 kB
+SReclaimable:     506420 kB
+SUnreclaim:       267648 kB
+KernelStack:       28000 kB
+PageTables:        62944 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    10137904 kB
+Committed_AS:   17120204 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      140700 kB
+VmallocChunk:          0 kB
+Percpu:             7680 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      2048 kB
+ShmemHugePages:   851968 kB
+ShmemPmdMapped:    32768 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      824768 kB
+DirectMap2M:    14616576 kB
+DirectMap1G:     2097152 kB
+
+container (cgroup) information:
+container_type: cgroupv2
+cpu_cpuset_cpus: failed
+cpu_memory_nodes: failed
+active_processor_count: 8
+cpu_quota: -2
+cpu_period: -2
+cpu_shares: -2
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -1
+memory_soft_limit_in_bytes: 0
+memory_usage_in_bytes: 2861662208
+memory_max_usage_in_bytes: -2
+
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 140 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 3069.668
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 4100.000
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 4100.000
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 4039.059
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 3802.268
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 4100.000
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 4100.010
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 140
+model name	: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+stepping	: 1
+microcode	: 0xb6
+cpu MHz		: 3965.568
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 invpcid_single cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds
+bogomips	: 5606.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16081512k(1936764k free), swap 2097148k(2096636k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.382-b05) for linux-amd64 JRE (Zulu 8.72.0.17-CA-linux64) (1.8.0_382-b05), built on Jul 14 2023 08:27:52 by "zulu_re" with gcc 7.3.0
+
+time: Sat Apr  6 23:28:43 2024
+timezone: IST
+elapsed time: 191.342206 seconds (0d 0h 3m 11s)
+
